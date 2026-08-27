@@ -1,0 +1,13 @@
+[
+  {
+    "city_slug": "pittsburgh-pa",
+    "service_slug": "tree-service",
+    "name": "Example Tree Co",
+    "areas_served": ["Pittsburgh", "Bethel Park"],
+    "phone": "(555) 014-0000",
+    "license_id": "PA-000000",
+    "blurb": "Sample only. Do not copy these values onto a live page.",
+    "tier": "featured",
+    "profile_url": ""
+  }
+]
