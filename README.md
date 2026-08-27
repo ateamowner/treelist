@@ -26,11 +26,13 @@ npm start
 
 ## GitHub Pages
 
-Public repo: [https://github.com/ateamowner/treelist](https://github.com/ateamowner/treelist)
+Source repo: [https://github.com/ateamowner/treelist](https://github.com/ateamowner/treelist)
 
-- Project URL: https://ateamowner.github.io/treelist/
-- Custom domain: https://treelist.ai (CNAME committed as `public/CNAME`)
-- Workflow: `.github/workflows/pages.yml` builds `next build` (`output: "export"`) and deploys `out/`
+Pages repo (user site, auto-enabled): [https://github.com/ateamowner/ateamowner.github.io](https://github.com/ateamowner/ateamowner.github.io)
+
+- github.io URL: https://ateamowner.github.io/
+- Custom domain: https://treelist.ai (`CNAME` committed as `treelist.ai`)
+- Publish: `ateamowner.github.io` builds this source (`output: "export"`) and copies `out/` to the user-site root
 
 ## Porkbun DNS (do not change nameservers)
 
