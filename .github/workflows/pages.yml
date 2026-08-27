@@ -1,18 +1,9 @@
-name: Deploy GitHub Pages
+name: Build static export
 
 on:
   push:
     branches: ["main"]
   workflow_dispatch:
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: false
 
 jobs:
   build:
@@ -26,32 +17,9 @@ jobs:
       - run: npm run build
         env:
           NEXT_PUBLIC_SITE_URL: https://treelist.ai
-      - name: Confirm Pages files
+      - name: Confirm static files
         run: |
           test -f out/CNAME
           test -f out/.nojekyll
           test -d out/pittsburgh-pa
           test -d out/dayton-oh
-          echo treelist.ai > out/CNAME
-          touch out/.nojekyll
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: out
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
-      - name: Set custom domain treelist.ai
-        continue-on-error: true
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          gh api --method PUT "repos/${{ github.repository }}/pages" \
-            -f cname='treelist.ai' \
-            -f build_type='workflow'
