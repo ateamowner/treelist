@@ -116,9 +116,9 @@ Each object:
 
 ## Quote form and `LEADS_EMAIL`
 
-The quote form is a **native HTML POST** (no `fetch` / XHR). Action: `https://formsubmit.co/treelist@agentmail.to`. Formsubmit emails **LEADS_EMAIL=`treelist@agentmail.to`**. Hidden fields: `_subject`, `_template`, `_captcha=false`, `_next=https://treelist.ai/request-sent/`, plus a `_honey` honeypot.
+The quote form is a **native HTML POST** (no `fetch` / XHR). Action: `https://api.web3forms.com/submit`. Web3Forms notifies **LEADS_EMAIL=`treelist@agentmail.to`**. Hidden fields: `access_key`, `redirect=https://treelist.ai/request-sent/`, `subject=TreeList quote request`, plus a `botcheck` honeypot.
 
-The first submission to a new inbox sends a confirmation email to `treelist@agentmail.to`. Open that message and confirm the form before live leads arrive. The browser leaves the city page (activation page or `/request-sent/`).
+The browser leaves the city page and lands on `/request-sent/`.
 
 There is no credit-card field. Success copy on `/request-sent/`: “Request sent. A local company will call you.”
 
@@ -134,3 +134,4 @@ It is labeled as a national range, not a Pittsburgh / Milwaukee / Oklahoma City 
 
 - `sitemap.xml` and `robots.txt` are generated from the city/service config.
 - Every city and city × service page includes JSON-LD: `LocalBusiness` for TreeList the publisher (not a vendor), `FAQPage` matching the visible FAQs, and `BreadcrumbList`.
+- Google Search Console: static file `/googled3ae2edf58b5b2f8.html` and a homepage-only `google-site-verification` meta tag.

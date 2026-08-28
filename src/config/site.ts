@@ -11,8 +11,10 @@ export const site = {
   phone: "(555) 014-8733",
   email: "hello@treelist.ai",
   leadsEmail: "treelist@agentmail.to",
-  /** Native HTML POST — emails LEADS_EMAIL. No fetch/XHR. */
-  formAction: "https://formsubmit.co/treelist@agentmail.to",
+  /** Native HTML POST to Web3Forms (notifies LEADS_EMAIL). No fetch/XHR. */
+  formAction: "https://api.web3forms.com/submit",
+  formAccessKey: "c0e21cad-ae27-426a-85d1-275daa226af2",
+  formRedirect: "https://treelist.ai/request-sent/",
   tagline: "A directory of tree service companies. Not a contractor.",
   year: 2026,
   description:

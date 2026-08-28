@@ -305,17 +305,16 @@ export function QuoteForm({ city, service, listingId, compact }: QuoteFormProps)
       </label>
 
       <input
-        type="text"
-        name="_honey"
+        type="checkbox"
+        name="botcheck"
         tabIndex={-1}
         autoComplete="off"
         aria-hidden="true"
         className="hidden"
       />
-      <input type="hidden" name="_subject" value={`${site.name} quote request`} />
-      <input type="hidden" name="_template" value="table" />
-      <input type="hidden" name="_captcha" value="false" />
-      <input type="hidden" name="_next" value="https://treelist.ai/request-sent/" />
+      <input type="hidden" name="access_key" value={site.formAccessKey} />
+      <input type="hidden" name="redirect" value={site.formRedirect} />
+      <input type="hidden" name="subject" value={`${site.name} quote request`} />
       <input type="hidden" name="page_url" defaultValue="" />
       <input type="hidden" name="city" defaultValue={city?.name ?? ""} />
       <input type="hidden" name="state_abbr" defaultValue={city?.stateAbbr ?? ""} />

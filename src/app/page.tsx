@@ -12,6 +12,9 @@ import {
 export const metadata: Metadata = {
   title: `${site.name} — tree service directory`,
   description: site.description,
+  verification: {
+    google: "vcnYdnF1KMLOxoxGk0uojn1SIPKQfuevoOKTrtdVg40",
+  },
 };
 
 export default function HomePage() {
