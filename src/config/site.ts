@@ -11,9 +11,8 @@ export const site = {
   phone: "(555) 014-8733",
   email: "hello@treelist.ai",
   leadsEmail: "treelist@agentmail.to",
-  /** Public form endpoint — emails LEADS_EMAIL with no Node server. */
+  /** Native HTML POST — emails LEADS_EMAIL. No fetch/XHR. */
   formAction: "https://formsubmit.co/treelist@agentmail.to",
-  formAjax: "https://formsubmit.co/ajax/treelist@agentmail.to",
   tagline: "A directory of tree service companies. Not a contractor.",
   year: 2026,
   description:

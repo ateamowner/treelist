@@ -34,6 +34,7 @@ Pages repo (user site, auto-enabled): [https://github.com/ateamowner/ateamowner.
 - Custom domain: https://treelist.ai (`CNAME` committed as `treelist.ai`)
 - Publish: `ateamowner.github.io` builds this source (`output: "export"`) and copies `out/` to the user-site root
 
+
 ## Porkbun DNS (do not change nameservers)
 
 Keep Porkbun nameservers. Add these records for GitHub Pages ([official docs](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)):
@@ -115,11 +116,11 @@ Each object:
 
 ## Quote form and `LEADS_EMAIL`
 
-The form POSTs to [Formsubmit](https://formsubmit.co) at `https://formsubmit.co/treelist@agentmail.to` (AJAX: `/ajax/…`). Formsubmit emails **LEADS_EMAIL=`treelist@agentmail.to`**. No Node API and no SMTP on the host.
+The quote form is a **native HTML POST** (no `fetch` / XHR). Action: `https://formsubmit.co/treelist@agentmail.to`. Formsubmit emails **LEADS_EMAIL=`treelist@agentmail.to`**. Hidden fields: `_subject`, `_template`, `_captcha=false`, `_next=https://treelist.ai/request-sent/`, plus a `_honey` honeypot.
 
-The first submission to a new inbox sends a confirmation email to `treelist@agentmail.to`. Open that message and confirm the form before live leads arrive.
+The first submission to a new inbox sends a confirmation email to `treelist@agentmail.to`. Open that message and confirm the form before live leads arrive. The browser leaves the city page (activation page or `/request-sent/`).
 
-There is no credit-card field. Success copy: “Request sent. A local company will call you.” No-JS submits land on `/request-sent/`.
+There is no credit-card field. Success copy on `/request-sent/`: “Request sent. A local company will call you.”
 
 ## Cost guide
 

@@ -12,8 +12,6 @@ import {
   type Service,
 } from "@/config/site";
 
-const SUCCESS_MESSAGE = "Request sent. A local company will call you.";
-
 const fieldClassName =
   "h-11 w-full rounded-lg border border-input bg-card px-2.5 text-base outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 md:text-sm";
 
@@ -75,10 +73,6 @@ export function QuoteForm({ city, service, listingId, compact }: QuoteFormProps)
   const lastKeyRef = useRef("");
   const key = draftKey(city, service);
   const [draft, setDraft] = useState<Draft>(() => readDraft(key, service));
-  const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">(
-    "idle"
-  );
-  const [error, setError] = useState("");
 
   function update<K extends keyof Draft>(name: K, value: Draft[K]) {
     setDraft((prev) => {
@@ -116,87 +110,14 @@ export function QuoteForm({ city, service, listingId, compact }: QuoteFormProps)
     setHidden(form, "utm_campaign", params.get("utm_campaign") ?? "");
   }, []);
 
-  async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    setStatus("submitting");
-    setError("");
-
-    const form = event.currentTarget;
-    const data = new FormData(form);
-    const payload = Object.fromEntries(data.entries());
-    payload.sms_consent = data.get("sms_consent") ? "true" : "false";
-    payload.privacy_consent = data.get("privacy_consent") ? "true" : "false";
-
-    try {
-      const response = await fetch(site.formAjax, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify({
-          ...payload,
-          _subject: `${site.name} quote request`,
-          _template: "table",
-          _captcha: "false",
-        }),
-      });
-      const json = (await response.json()) as {
-        success?: string | boolean;
-        message?: string;
-      };
-      const ok =
-        response.ok &&
-        (json.success === true ||
-          json.success === "true" ||
-          json.message?.toLowerCase().includes("success"));
-      if (!ok) {
-        throw new Error(json.message ?? "Could not send the request.");
-      }
-      drafts.delete(key);
-      setStatus("success");
-    } catch (err) {
-      setStatus("error");
-      setError(err instanceof Error ? err.message : "Could not send the request.");
-    }
-  }
-
-  if (status === "success") {
-    return (
-      <div
-        id="quote"
-        className="rounded-lg border border-border bg-card p-5 shadow-sm"
-        role="status"
-      >
-        <p className="font-heading text-lg font-semibold">{SUCCESS_MESSAGE}</p>
-        <p className="mt-2 text-sm text-muted-foreground">
-          {site.name} is a directory. The call will come from a local company,
-          not from a {site.name} crew.
-        </p>
-        <Button
-          type="button"
-          variant="outline"
-          className="mt-4 h-11"
-          onClick={() => {
-            writeDraft(key, emptyDraft(service));
-            setDraft(emptyDraft(service));
-            setStatus("idle");
-          }}
-        >
-          Send another request
-        </Button>
-      </div>
-    );
-  }
-
   return (
     <form
       ref={formRef}
       id="quote"
       action={site.formAction}
       method="POST"
+      acceptCharset="UTF-8"
       autoComplete="off"
-      onSubmit={onSubmit}
       onKeyDown={(event) => {
         lastKeyRef.current = event.key;
         if (event.key !== "Escape") return;
@@ -383,14 +304,18 @@ export function QuoteForm({ city, service, listingId, compact }: QuoteFormProps)
         </span>
       </label>
 
+      <input
+        type="text"
+        name="_honey"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        className="hidden"
+      />
       <input type="hidden" name="_subject" value={`${site.name} quote request`} />
       <input type="hidden" name="_template" value="table" />
       <input type="hidden" name="_captcha" value="false" />
-      <input
-        type="hidden"
-        name="_next"
-        value={`${site.url.replace(/\/$/, "")}/request-sent/`}
-      />
+      <input type="hidden" name="_next" value="https://treelist.ai/request-sent/" />
       <input type="hidden" name="page_url" defaultValue="" />
       <input type="hidden" name="city" defaultValue={city?.name ?? ""} />
       <input type="hidden" name="state_abbr" defaultValue={city?.stateAbbr ?? ""} />
@@ -401,18 +326,8 @@ export function QuoteForm({ city, service, listingId, compact }: QuoteFormProps)
       <input type="hidden" name="utm_medium" defaultValue="" />
       <input type="hidden" name="utm_campaign" defaultValue="" />
 
-      {status === "error" ? (
-        <p className="mt-3 text-sm text-destructive" role="alert">
-          {error}
-        </p>
-      ) : null}
-
-      <Button
-        type="submit"
-        disabled={status === "submitting"}
-        className="mt-4 h-11 w-full text-base"
-      >
-        {status === "submitting" ? "Sending…" : "Send request"}
+      <Button type="submit" className="mt-4 h-11 w-full text-base">
+        Send request
       </Button>
     </form>
   );
