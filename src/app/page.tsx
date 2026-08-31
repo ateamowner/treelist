@@ -12,6 +12,7 @@ import {
 export const metadata: Metadata = {
   title: `${site.name} — tree service directory`,
   description: site.description,
+  alternates: { canonical: "/" },
   verification: {
     google: "vcnYdnF1KMLOxoxGk0uojn1SIPKQfuevoOKTrtdVg40",
   },
