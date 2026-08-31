@@ -5,6 +5,7 @@ import { liveCitySlugs, servicePath, site } from "@/config/site";
 export const metadata: Metadata = {
   title: `For tree companies — ${site.name}`,
   description: `How contractors buy ${site.name} listings and exclusive leads. Standard, featured, and exclusive. No credit card on this page.`,
+  alternates: { canonical: "/for-pros/" },
 };
 
 export default function ForProsPage() {

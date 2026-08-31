@@ -42,7 +42,7 @@ export async function generateMetadata({
   return {
     title,
     description,
-    alternates: { canonical: `/${city.slug}` },
+    alternates: { canonical: `/${city.slug}/` },
   };
 }
 

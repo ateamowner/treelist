@@ -38,6 +38,13 @@ export function faqPageSchema(faqs: Faq[]) {
   };
 }
 
+function breadcrumbItemUrl(path: string): string {
+  const base = site.url.replace(/\/$/, "");
+  if (!path || path === "/") return `${base}/`;
+  const withLead = path.startsWith("/") ? path : `/${path}`;
+  return `${base}${withLead.endsWith("/") ? withLead : `${withLead}/`}`;
+}
+
 export function breadcrumbSchema(
   items: { name: string; path: string }[]
 ) {
@@ -48,7 +55,7 @@ export function breadcrumbSchema(
       "@type": "ListItem",
       position: index + 1,
       name: item.name,
-      item: `${site.url}${item.path}`,
+      item: breadcrumbItemUrl(item.path),
     })),
   };
 }
