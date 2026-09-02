@@ -133,5 +133,8 @@ It is labeled as a national range, not a Pittsburgh / Milwaukee / Oklahoma City 
 ## SEO
 
 - `sitemap.xml` and `robots.txt` are generated from the city/service config.
+- Sitemap `<loc>` values keep trailing slashes (including the homepage `https://treelist.ai/`). Do not revert to no-slash locs. Never use `treelists.com`.
 - Every city and city × service page includes JSON-LD: `LocalBusiness` for TreeList the publisher (not a vendor), `FAQPage` matching the visible FAQs, and `BreadcrumbList`.
 - Google Search Console: static file `/googled3ae2edf58b5b2f8.html` and a homepage-only `google-site-verification` meta tag.
+- IndexNow (Bing and other engines): public key file `/b0012ad74f75e5722d8c062d9b80bdd26f8af6c6bf5c6d37b6822dac893efef8.txt` (plain text, key only). The GitHub Pages build workflow POSTs sitemap locs to `https://api.indexnow.org/indexnow` after `npm run build`. The key is public by design; no secret env var. Local check: `node scripts/ping-indexnow.mjs --dry-run` after a build.
+- **Anthony:** add **treelist.ai** (not treelists.com) in Bing Webmaster Tools and paste the real `msvalidate.01` / HTML-tag verification code into the homepage metadata slot. Do not invent a verification code. The layout `<head>` has a placeholder comment for that paste.

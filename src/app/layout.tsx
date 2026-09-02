@@ -20,7 +20,8 @@ const serif = Source_Serif_4({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} — tree service directory`,
+    // 404 reuses this default. Real pages set their own title.
+    default: `Page not found | ${site.name}`,
     template: `%s`,
   },
   description: site.description,
@@ -57,6 +58,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${sans.variable} ${serif.variable} h-full scroll-smooth antialiased`}
     >
       <body className="flex min-h-full flex-col bg-background text-foreground">
+        <span
+          hidden
+          dangerouslySetInnerHTML={{
+            __html: "<!-- Bing Webmaster (msvalidate.01): Anthony must add https://treelist.ai (not treelists.com) in Bing Webmaster Tools and paste the real content value. Do not invent a verification code. Google: homepage already has google-site-verification; paste a replacement only if Search Console issues one. -->",
+          }}
+        />
         <style>{`:root { ${themeVars}; }`}</style>
         <SiteHeader />
         <main className="flex-1">{children}</main>

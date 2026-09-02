@@ -6,7 +6,9 @@
     "dev": "next dev --port 43127",
     "build": "next build",
     "start": "npx --yes serve out -l 43127",
-    "lint": "eslint"
+    "lint": "eslint",
+    "indexnow": "node scripts/ping-indexnow.mjs",
+    "indexnow:dry-run": "node scripts/ping-indexnow.mjs --dry-run"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",

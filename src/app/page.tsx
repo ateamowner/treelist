@@ -13,6 +13,8 @@ export const metadata: Metadata = {
   title: `${site.name} — tree service directory`,
   description: site.description,
   alternates: { canonical: "/" },
+  // Bing msvalidate.01: leave unset until Anthony pastes the real Bing
+  // Webmaster Tools code for treelist.ai. Do not invent a token.
   verification: {
     google: "vcnYdnF1KMLOxoxGk0uojn1SIPKQfuevoOKTrtdVg40",
   },
