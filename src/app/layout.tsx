@@ -56,6 +56,16 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${sans.variable} ${serif.variable} h-full scroll-smooth antialiased`}
     >
+      <head>
+        {/*
+          Search verification placeholders — do not invent codes.
+          Bing Webmaster (msvalidate.01): Anthony must add https://treelist.ai
+          (not treelists.com) in Bing Webmaster Tools and paste the real
+          content value. Google: homepage metadata.verification.google is live;
+          paste a new google-site-verification value only if Search Console
+          issues a replacement.
+        */}
+      </head>
       <body className="flex min-h-full flex-col bg-background text-foreground">
         <style>{`:root { ${themeVars}; }`}</style>
         <SiteHeader />
