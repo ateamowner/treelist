@@ -70,8 +70,9 @@ Remove any Porkbun default parking / URL-forward records on `@` and `www` first.
 - [/milwaukee-wi/tree-service](/milwaukee-wi/tree-service) — Best Tree Service in Milwaukee — 2026
 - [/oklahoma-city-ok/tree-service](/oklahoma-city-ok/tree-service) — Best Tree Service in Oklahoma City — 2026
 - [/dayton-oh/tree-service](/dayton-oh/tree-service) — Best Tree Service in Dayton — 2026
+- [/omaha-ne/tree-service](/omaha-ne/tree-service) — Best Tree Service in Omaha — 2026
 
-City hubs: `/pittsburgh-pa`, `/milwaukee-wi`, `/oklahoma-city-ok`, `/dayton-oh`.
+City hubs: `/pittsburgh-pa`, `/milwaukee-wi`, `/oklahoma-city-ok`, `/dayton-oh`, `/omaha-ne`.
 
 Related-service stubs (unique H1, intro, form, links back): `tree-removal`, `stump-grinding`, `tree-trimming`, `emergency-tree-service`.
 
@@ -128,7 +129,7 @@ The only dollar range on the site is the national published range:
 
 Tree removal typically $200–$2,000+, average about $750 ([Angi 2026](https://www.angi.com/articles/how-much-does-tree-removal-cost.htm)).
 
-It is labeled as a national range, not a Pittsburgh / Milwaukee / Oklahoma City / Dayton survey.
+It is labeled as a national range, not a Pittsburgh / Milwaukee / Oklahoma City / Dayton / Omaha survey.
 
 ## SEO
 

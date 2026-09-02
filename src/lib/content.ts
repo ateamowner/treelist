@@ -33,6 +33,12 @@ export function introParagraphs(city: City, service: Service): string[] {
 }
 
 function serviceIntro(city: City, service: Service): string {
+  const shared = sharedServiceIntro(city, service);
+  const omaha = omahaServiceNote(city, service);
+  return omaha ? `${shared} ${omaha}` : shared;
+}
+
+function sharedServiceIntro(city: City, service: Service): string {
   switch (service.slug) {
     case "tree-service":
       return `${city.name} homeowners use this URL to request a callback from a local tree company — assessment, pruning, removal, or cleanup — without calling a random truck from a search ad. ${site.name} does not send a crew of its own.`;
@@ -46,6 +52,25 @@ function serviceIntro(city: City, service: Service): string {
       return `Use this ${city.name} page for storm damage, a tree on a structure, or a tree blocking a driveway or street. Say so on the form. Emergency work is priced and scheduled differently than a planned removal.`;
     default:
       return service.blurb;
+  }
+}
+
+/** Geographic context only. No contractors, ratings, or local prices. */
+function omahaServiceNote(city: City, service: Service): string | null {
+  if (city.slug !== "omaha-ne") return null;
+  switch (service.slug) {
+    case "tree-service":
+      return `Work here sits on the Missouri River metro — including the Council Bluffs side — with City of Omaha Parks street trees, older Dundee and Benson lots, and newer west Omaha yards.`;
+    case "tree-removal":
+      return `Omaha takedowns often follow ice-storm splits or ash decline after emerald ash borer. Tight Dundee and Benson lots are a different access problem than a west Omaha subdivision.`;
+    case "stump-grinding":
+      return `After an ash or ice-storm removal in Omaha, the stump is still a second visit — whether the lot is an older Dundee or Benson parcel or a newer west Omaha yard.`;
+    case "tree-trimming":
+      return `In Omaha that often means clearance around City of Omaha Parks street trees, ice-loaded limbs, or a mature canopy on a Dundee or Benson lot versus a newer west Omaha street.`;
+    case "emergency-tree-service":
+      return `Omaha ice storms and wind along the Missouri River corridor are the usual reason someone needs a crew the same day. Say if a tree is on a house, a street, or a City of Omaha Parks planting.`;
+    default:
+      return null;
   }
 }
 

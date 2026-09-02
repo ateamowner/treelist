@@ -180,6 +180,16 @@ export const cities: City[] = [
       "The Miami Valley, older city lots, and ash-tree loss after emerald ash borer shape a lot of Dayton work. Ice, wind, and street-tree clearance come up often.",
   },
   {
+    slug: "omaha-ne",
+    name: "Omaha",
+    state: "Nebraska",
+    stateAbbr: "NE",
+    status: "live",
+    nearbySlugs: [],
+    setting:
+      "The Missouri River and the Council Bluffs side of the metro, ice storms, and ash-tree loss after emerald ash borer shape a lot of Omaha work. City of Omaha Parks street trees, older Dundee and Benson lots, and newer west Omaha subdivisions come up often.",
+  },
+  {
     slug: "kettering-oh",
     name: "Kettering",
     state: "Ohio",
