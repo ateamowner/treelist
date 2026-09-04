@@ -69,7 +69,7 @@ export default function ForProsPage() {
       <h2 className="mt-10 font-heading text-2xl font-semibold">Pricing</h2>
       <p className="mt-3 leading-7">
         City rates are not published on this page. Call or email and we will
-        quote a market (live first: Pittsburgh, Milwaukee, Oklahoma City, Dayton, Omaha) and a
+        quote a market (live first: Pittsburgh, Milwaukee, Oklahoma City, Dayton, Omaha, Columbia) and a
         term. Do not send card numbers to the homeowner form.
       </p>
       <p className="mt-3 leading-7">
