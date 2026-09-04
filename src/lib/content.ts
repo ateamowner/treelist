@@ -34,8 +34,9 @@ export function introParagraphs(city: City, service: Service): string[] {
 
 function serviceIntro(city: City, service: Service): string {
   const shared = sharedServiceIntro(city, service);
-  const omaha = omahaServiceNote(city, service);
-  return omaha ? `${shared} ${omaha}` : shared;
+  const extra =
+    omahaServiceNote(city, service) ?? columbiaServiceNote(city, service);
+  return extra ? `${shared} ${extra}` : shared;
 }
 
 function sharedServiceIntro(city: City, service: Service): string {
@@ -69,6 +70,25 @@ function omahaServiceNote(city: City, service: Service): string | null {
       return `In Omaha that often means clearance around City of Omaha Parks street trees, ice-loaded limbs, or a mature canopy on a Dundee or Benson lot versus a newer west Omaha street.`;
     case "emergency-tree-service":
       return `Omaha ice storms and wind along the Missouri River corridor are the usual reason someone needs a crew the same day. Say if a tree is on a house, a street, or a City of Omaha Parks planting.`;
+    default:
+      return null;
+  }
+}
+
+/** Geographic context only. No contractors, ratings, or local prices. */
+function columbiaServiceNote(city: City, service: Service): string | null {
+  if (city.slug !== "columbia-sc") return null;
+  switch (service.slug) {
+    case "tree-service":
+      return `Work here sits at the Congaree and Broad River confluence in South Carolina's Midlands — loblolly pine and live oak, older Shandon and Forest Acres lots, and the northeast corridor.`;
+    case "tree-removal":
+      return `Columbia, South Carolina takedowns often follow ice-storm splits or tropical remnants. Tight Shandon and Forest Acres lots are a different access problem than a northeast-corridor yard.`;
+    case "stump-grinding":
+      return `After a loblolly pine, live oak, or ice-storm removal in Columbia, South Carolina, the stump is still a second visit — whether the lot is an older Shandon or Forest Acres parcel or a northeast-corridor yard.`;
+    case "tree-trimming":
+      return `In Columbia, South Carolina that often means clearance around loblolly pine and live oak, ice- or remnant-loaded limbs, or a mature canopy on a Shandon or Forest Acres lot versus a northeast-corridor street.`;
+    case "emergency-tree-service":
+      return `Columbia, South Carolina ice storms and tropical remnants along the Congaree and Broad River corridor are the usual reason someone needs a crew the same day. Say if a tree is on a house, a street, or a Midlands lot in Shandon or Forest Acres.`;
     default:
       return null;
   }

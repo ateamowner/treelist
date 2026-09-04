@@ -190,6 +190,16 @@ export const cities: City[] = [
       "The Missouri River and the Council Bluffs side of the metro, ice storms, and ash-tree loss after emerald ash borer shape a lot of Omaha work. City of Omaha Parks street trees, older Dundee and Benson lots, and newer west Omaha subdivisions come up often.",
   },
   {
+    slug: "columbia-sc",
+    name: "Columbia",
+    state: "South Carolina",
+    stateAbbr: "SC",
+    status: "live",
+    nearbySlugs: [],
+    setting:
+      "The Congaree and Broad River confluence, Midlands heat and humidity, ice storms, and tropical remnants shape a lot of Columbia, South Carolina work. Loblolly pine and live oak, older Shandon and Forest Acres lots, and the northeast corridor come up often.",
+  },
+  {
     slug: "kettering-oh",
     name: "Kettering",
     state: "Ohio",
