@@ -5,6 +5,7 @@ import { site } from "@/config/site";
 export const metadata: Metadata = {
   title: `Request sent — ${site.name}`,
   robots: { index: false, follow: false },
+  alternates: { canonical: "/request-sent/" },
 };
 
 export default function RequestSentPage() {

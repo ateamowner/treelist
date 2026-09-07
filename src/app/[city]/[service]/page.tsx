@@ -10,9 +10,11 @@ import { ListingsBlock } from "@/components/listings-block";
 import { QuoteFormLoader } from "@/components/quote-form-loader";
 import {
   cities,
+  cityPath,
   getCity,
   getService,
   lockedH1,
+  servicePath,
   pageTitle,
   services,
   site,
@@ -61,7 +63,7 @@ export async function generateMetadata({
     openGraph: {
       title,
       description,
-      url: `/${city.slug}/${service.slug}`,
+      url: `/${city.slug}/${service.slug}/`,
       siteName: site.name,
       type: "website",
     },
@@ -99,8 +101,8 @@ export default async function ServicePage({
       <Breadcrumbs
         items={[
           { href: "/", label: "Home" },
-          { href: `/${city.slug}`, label: `${city.name}, ${city.stateAbbr}` },
-          { href: `/${city.slug}/${service.slug}`, label: service.name },
+          { href: cityPath(city), label: `${city.name}, ${city.stateAbbr}` },
+          { href: servicePath(city, service), label: service.name },
         ]}
       />
 

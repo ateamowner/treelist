@@ -502,13 +502,13 @@ export function getParentCity(city: City): City | undefined {
 
 export function cityPath(city: City | string): string {
   const slug = typeof city === "string" ? city : city.slug;
-  return `/${slug}`;
+  return `/${slug}/`;
 }
 
 export function servicePath(city: City | string, service: Service | string): string {
   const citySlug = typeof city === "string" ? city : city.slug;
   const serviceSlug = typeof service === "string" ? service : service.slug;
-  return `/${citySlug}/${serviceSlug}`;
+  return `/${citySlug}/${serviceSlug}/`;
 }
 
 export function lockedH1(service: Service, city: City): string {

@@ -27,7 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: city.status === "live" ? 0.8 : 0.4,
     },
     ...services.map((service) => ({
-      url: loc(`${servicePath(city, service)}/`),
+      url: loc(servicePath(city, service)),
       lastModified: new Date(),
       changeFrequency: "weekly" as const,
       priority:
