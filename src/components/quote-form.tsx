@@ -297,7 +297,7 @@ export function QuoteForm({ city, service, listingId, compact }: QuoteFormProps)
         />
         <span>
           I agree to the{" "}
-          <a href="/privacy" className="underline underline-offset-2">
+          <a href="/privacy/" className="underline underline-offset-2">
             privacy policy
           </a>
           . Required.
