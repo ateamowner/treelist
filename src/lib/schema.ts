@@ -1,4 +1,11 @@
-import { lockedH1, site, type City, type Service } from "@/config/site";
+import {
+  cityPath,
+  lockedH1,
+  servicePath,
+  site,
+  type City,
+  type Service,
+} from "@/config/site";
 import type { Faq } from "@/lib/content";
 
 export function publisherLocalBusiness(city: City) {
@@ -63,15 +70,15 @@ export function breadcrumbSchema(
 export function servicePageBreadcrumbs(city: City, service: Service) {
   return breadcrumbSchema([
     { name: "Home", path: "/" },
-    { name: `${city.name}, ${city.stateAbbr}`, path: `/${city.slug}` },
-    { name: service.name, path: `/${city.slug}/${service.slug}` },
+    { name: `${city.name}, ${city.stateAbbr}`, path: cityPath(city) },
+    { name: service.name, path: servicePath(city, service) },
   ]);
 }
 
 export function hubBreadcrumbs(city: City) {
   return breadcrumbSchema([
     { name: "Home", path: "/" },
-    { name: `${city.name}, ${city.stateAbbr}`, path: `/${city.slug}` },
+    { name: `${city.name}, ${city.stateAbbr}`, path: cityPath(city) },
   ]);
 }
 

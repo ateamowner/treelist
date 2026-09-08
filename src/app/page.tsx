@@ -3,6 +3,7 @@ import Link from "next/link";
 import { QuoteFormLoader } from "@/components/quote-form-loader";
 import {
   cities,
+  cityPath,
   liveCitySlugs,
   servicePath,
   services,
@@ -40,7 +41,7 @@ export default function HomePage() {
           <p className="mt-3 max-w-2xl text-base leading-7 text-muted-foreground">
             Homeowners use the form. Companies buy a listing or exclusive leads
             on the{" "}
-            <Link href="/for-pros" className="underline underline-offset-2">
+            <Link href="/for-pros/" className="underline underline-offset-2">
               For Pros
             </Link>{" "}
             page. Until a listing goes live on a URL, we still take the request
@@ -77,7 +78,7 @@ export default function HomePage() {
                 </Link>
               </p>
               <p className="mt-2">
-                <Link href={`/${city.slug}`} className="text-sm hover:underline">
+                <Link href={cityPath(city)} className="text-sm hover:underline">
                   All {city.name} services
                 </Link>
               </p>

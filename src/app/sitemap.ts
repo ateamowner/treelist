@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { cities, servicePath, services, site } from "@/config/site";
+import { cities, cityPath, servicePath, services, site } from "@/config/site";
 
 export const dynamic = "force-static";
 
@@ -21,13 +21,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const cityRoutes = cities.flatMap((city) => [
     {
-      url: loc(`/${city.slug}/`),
+      url: loc(cityPath(city)),
       lastModified: new Date(),
       changeFrequency: "weekly" as const,
       priority: city.status === "live" ? 0.8 : 0.4,
     },
     ...services.map((service) => ({
-      url: loc(`${servicePath(city, service)}/`),
+      url: loc(servicePath(city, service)),
       lastModified: new Date(),
       changeFrequency: "weekly" as const,
       priority:

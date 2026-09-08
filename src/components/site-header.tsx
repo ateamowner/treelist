@@ -20,7 +20,7 @@ export function SiteHeader() {
           <Link href="/#cities" className="hover:underline">
             Cities
           </Link>
-          <Link href="/for-pros" className="hidden hover:underline sm:inline">
+          <Link href="/for-pros/" className="hidden hover:underline sm:inline">
             For pros
           </Link>
           <a

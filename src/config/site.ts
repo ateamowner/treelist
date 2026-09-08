@@ -500,15 +500,21 @@ export function getParentCity(city: City): City | undefined {
   return city.parentSlug ? getCity(city.parentSlug) : undefined;
 }
 
+/** GitHub Pages 301s no-slash URLs; internal paths must already include the slash. */
+export function withTrailingSlash(path: string): string {
+  if (!path || path === "/") return "/";
+  return path.endsWith("/") ? path : `${path}/`;
+}
+
 export function cityPath(city: City | string): string {
   const slug = typeof city === "string" ? city : city.slug;
-  return `/${slug}`;
+  return withTrailingSlash(`/${slug}`);
 }
 
 export function servicePath(city: City | string, service: Service | string): string {
   const citySlug = typeof city === "string" ? city : city.slug;
   const serviceSlug = typeof service === "string" ? service : service.slug;
-  return `/${citySlug}/${serviceSlug}`;
+  return withTrailingSlash(`/${citySlug}/${serviceSlug}`);
 }
 
 export function lockedH1(service: Service, city: City): string {

@@ -33,12 +33,12 @@ export function SiteFooter() {
           <p className="text-sm font-semibold">Site</p>
           <ul className="mt-2 space-y-1 text-sm">
             <li>
-              <Link href="/for-pros" className="hover:underline">
+              <Link href="/for-pros/" className="hover:underline">
                 For tree companies
               </Link>
             </li>
             <li>
-              <Link href="/privacy" className="hover:underline">
+              <Link href="/privacy/" className="hover:underline">
                 Privacy
               </Link>
             </li>
