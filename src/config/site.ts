@@ -200,6 +200,26 @@ export const cities: City[] = [
       "The Congaree and Broad River confluence, Midlands heat and humidity, ice storms, and tropical remnants shape a lot of Columbia, South Carolina work. Loblolly pine and live oak, older Shandon and Forest Acres lots, and the northeast corridor come up often.",
   },
   {
+    slug: "des-moines-ia",
+    name: "Des Moines",
+    state: "Iowa",
+    stateAbbr: "IA",
+    status: "live",
+    nearbySlugs: [],
+    setting:
+      "The Des Moines River and Raccoon River confluence, ice storms, derecho damage, and ash-tree loss after emerald ash borer shape a lot of Des Moines work. Older Beaverdale and Sherman Hill lots, and west Des Moines and Ankeny growth corridors come up often.",
+  },
+  {
+    slug: "winston-salem-nc",
+    name: "Winston-Salem",
+    state: "North Carolina",
+    stateAbbr: "NC",
+    status: "live",
+    nearbySlugs: [],
+    setting:
+      "Piedmont clay, ice storms, and oak and pine canopy shape a lot of Winston-Salem, North Carolina work. Older West End and Ardmore lots, and the Triad corridor come up often.",
+  },
+  {
     slug: "kettering-oh",
     name: "Kettering",
     state: "Ohio",
