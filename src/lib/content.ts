@@ -35,7 +35,10 @@ export function introParagraphs(city: City, service: Service): string[] {
 function serviceIntro(city: City, service: Service): string {
   const shared = sharedServiceIntro(city, service);
   const extra =
-    omahaServiceNote(city, service) ?? columbiaServiceNote(city, service);
+    omahaServiceNote(city, service) ??
+    columbiaServiceNote(city, service) ??
+    desMoinesServiceNote(city, service) ??
+    winstonSalemServiceNote(city, service);
   return extra ? `${shared} ${extra}` : shared;
 }
 
@@ -89,6 +92,44 @@ function columbiaServiceNote(city: City, service: Service): string | null {
       return `In Columbia, South Carolina that often means clearance around loblolly pine and live oak, ice- or remnant-loaded limbs, or a mature canopy on a Shandon or Forest Acres lot versus a northeast-corridor street.`;
     case "emergency-tree-service":
       return `Columbia, South Carolina ice storms and tropical remnants along the Congaree and Broad River corridor are the usual reason someone needs a crew the same day. Say if a tree is on a house, a street, or a Midlands lot in Shandon or Forest Acres.`;
+    default:
+      return null;
+  }
+}
+
+/** Geographic context only. No contractors, ratings, or local prices. */
+function desMoinesServiceNote(city: City, service: Service): string | null {
+  if (city.slug !== "des-moines-ia") return null;
+  switch (service.slug) {
+    case "tree-service":
+      return `Work here sits at the Des Moines River and Raccoon River confluence — ice storms, derecho damage, and ash after emerald ash borer, older Beaverdale and Sherman Hill lots, and west Des Moines and Ankeny growth corridors.`;
+    case "tree-removal":
+      return `Des Moines takedowns often follow ice-storm splits, derecho damage, or ash decline after emerald ash borer. Tight Beaverdale and Sherman Hill lots are a different access problem than a west Des Moines or Ankeny yard.`;
+    case "stump-grinding":
+      return `After an ash, ice-storm, or derecho removal in Des Moines, the stump is still a second visit — whether the lot is an older Beaverdale or Sherman Hill parcel or a west Des Moines or Ankeny yard.`;
+    case "tree-trimming":
+      return `In Des Moines that often means clearance around ice- or derecho-loaded limbs, ash after emerald ash borer, or a mature canopy on a Beaverdale or Sherman Hill lot versus a west Des Moines or Ankeny street.`;
+    case "emergency-tree-service":
+      return `Des Moines ice storms and derecho wind along the Des Moines and Raccoon River corridor are the usual reason someone needs a crew the same day. Say if a tree is on a house, a street, or a Beaverdale or Sherman Hill lot.`;
+    default:
+      return null;
+  }
+}
+
+/** Geographic context only. No contractors, ratings, or local prices. */
+function winstonSalemServiceNote(city: City, service: Service): string | null {
+  if (city.slug !== "winston-salem-nc") return null;
+  switch (service.slug) {
+    case "tree-service":
+      return `Work here sits on Piedmont clay in North Carolina's Triad — oak and pine, older West End and Ardmore lots, and the Triad corridor.`;
+    case "tree-removal":
+      return `Winston-Salem, North Carolina takedowns often follow ice-storm splits or storm-loaded oak and pine. Tight West End and Ardmore lots are a different access problem than a Triad-corridor yard.`;
+    case "stump-grinding":
+      return `After an oak, pine, or ice-storm removal in Winston-Salem, North Carolina, the stump is still a second visit — whether the lot is an older West End or Ardmore parcel or a Triad-corridor yard.`;
+    case "tree-trimming":
+      return `In Winston-Salem, North Carolina that often means clearance around oak and pine, ice-loaded limbs, or a mature canopy on a West End or Ardmore lot versus a Triad-corridor street.`;
+    case "emergency-tree-service":
+      return `Winston-Salem, North Carolina ice storms along the Piedmont and Triad corridor are the usual reason someone needs a crew the same day. Say if a tree is on a house, a street, or a West End or Ardmore lot.`;
     default:
       return null;
   }
