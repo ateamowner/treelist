@@ -38,7 +38,8 @@ function serviceIntro(city: City, service: Service): string {
     omahaServiceNote(city, service) ??
     columbiaServiceNote(city, service) ??
     desMoinesServiceNote(city, service) ??
-    winstonSalemServiceNote(city, service);
+    winstonSalemServiceNote(city, service) ??
+    wichitaServiceNote(city, service);
   return extra ? `${shared} ${extra}` : shared;
 }
 
@@ -130,6 +131,25 @@ function winstonSalemServiceNote(city: City, service: Service): string | null {
       return `In Winston-Salem, North Carolina that often means clearance around oak and pine, ice-loaded limbs, or a mature canopy on a West End or Ardmore lot versus a Triad-corridor street.`;
     case "emergency-tree-service":
       return `Winston-Salem, North Carolina ice storms along the Piedmont and Triad corridor are the usual reason someone needs a crew the same day. Say if a tree is on a house, a street, or a West End or Ardmore lot.`;
+    default:
+      return null;
+  }
+}
+
+/** Geographic context only. No contractors, ratings, or local prices. */
+function wichitaServiceNote(city: City, service: Service): string | null {
+  if (city.slug !== "wichita-ks") return null;
+  switch (service.slug) {
+    case "tree-service":
+      return `Work here sits on the Arkansas River in the Wichita metro — ice storms, plains wind, and ash and elm canopy, older College Hill and Riverside lots, and later west Wichita subdivisions.`;
+    case "tree-removal":
+      return `Wichita, Kansas takedowns often follow ice-storm splits or plains wind. Tight College Hill and Riverside lots are a different access problem than a later west Wichita subdivision.`;
+    case "stump-grinding":
+      return `After an ash, elm, ice-storm, or plains-wind removal in Wichita, Kansas, the stump is still a second visit — whether the lot is an older College Hill or Riverside parcel or a later west Wichita yard.`;
+    case "tree-trimming":
+      return `In Wichita, Kansas that often means clearance around ash and elm, ice- or wind-loaded limbs, or a mature canopy on a College Hill or Riverside lot versus a later west Wichita street.`;
+    case "emergency-tree-service":
+      return `Wichita, Kansas ice storms and plains wind along the Arkansas River corridor are the usual reason someone needs a crew the same day. Say if a tree is on a house, a street, or a College Hill or Riverside lot.`;
     default:
       return null;
   }

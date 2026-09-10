@@ -220,6 +220,16 @@ export const cities: City[] = [
       "Piedmont clay, ice storms, and oak and pine canopy shape a lot of Winston-Salem, North Carolina work. Older West End and Ardmore lots, and the Triad corridor come up often.",
   },
   {
+    slug: "wichita-ks",
+    name: "Wichita",
+    state: "Kansas",
+    stateAbbr: "KS",
+    status: "live",
+    nearbySlugs: [],
+    setting:
+      "The Arkansas River and the Wichita metro, ice storms, plains wind, and an ash and elm canopy shape a lot of Wichita, Kansas work. Older College Hill and Riverside lots, and later west Wichita subdivisions come up often.",
+  },
+  {
     slug: "kettering-oh",
     name: "Kettering",
     state: "Ohio",
