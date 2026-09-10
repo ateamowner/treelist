@@ -27,6 +27,7 @@ jobs:
           test -d out/columbia-sc
           test -d out/des-moines-ia
           test -d out/winston-salem-nc
+          test -d out/wichita-ks
           test -f out/b0012ad74f75e5722d8c062d9b80bdd26f8af6c6bf5c6d37b6822dac893efef8.txt
           test "$(cat out/b0012ad74f75e5722d8c062d9b80bdd26f8af6c6bf5c6d37b6822dac893efef8.txt)" = "b0012ad74f75e5722d8c062d9b80bdd26f8af6c6bf5c6d37b6822dac893efef8"
       - name: Ping IndexNow with sitemap URLs

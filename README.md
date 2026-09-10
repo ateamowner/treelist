@@ -74,8 +74,9 @@ Remove any Porkbun default parking / URL-forward records on `@` and `www` first.
 - [/columbia-sc/tree-service](/columbia-sc/tree-service) — Best Tree Service in Columbia — 2026
 - [/des-moines-ia/tree-service](/des-moines-ia/tree-service) — Best Tree Service in Des Moines — 2026
 - [/winston-salem-nc/tree-service](/winston-salem-nc/tree-service) — Best Tree Service in Winston-Salem — 2026
+- [/wichita-ks/tree-service](/wichita-ks/tree-service) — Best Tree Service in Wichita — 2026
 
-City hubs: `/pittsburgh-pa`, `/milwaukee-wi`, `/oklahoma-city-ok`, `/dayton-oh`, `/omaha-ne`, `/columbia-sc`, `/des-moines-ia`, `/winston-salem-nc`.
+City hubs: `/pittsburgh-pa`, `/milwaukee-wi`, `/oklahoma-city-ok`, `/dayton-oh`, `/omaha-ne`, `/columbia-sc`, `/des-moines-ia`, `/winston-salem-nc`, `/wichita-ks`.
 
 Related-service stubs (unique H1, intro, form, links back): `tree-removal`, `stump-grinding`, `tree-trimming`, `emergency-tree-service`.
 
@@ -132,7 +133,7 @@ The only dollar range on the site is the national published range:
 
 Tree removal typically $200–$2,000+, average about $750 ([Angi 2026](https://www.angi.com/articles/how-much-does-tree-removal-cost.htm)).
 
-It is labeled as a national range, not a Pittsburgh / Milwaukee / Oklahoma City / Dayton / Omaha / Columbia / Des Moines / Winston-Salem survey.
+It is labeled as a national range, not a Pittsburgh / Milwaukee / Oklahoma City / Dayton / Omaha / Columbia / Des Moines / Winston-Salem / Wichita survey.
 
 ## SEO
 
