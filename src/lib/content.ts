@@ -39,7 +39,8 @@ function serviceIntro(city: City, service: Service): string {
     columbiaServiceNote(city, service) ??
     desMoinesServiceNote(city, service) ??
     winstonSalemServiceNote(city, service) ??
-    wichitaServiceNote(city, service);
+    wichitaServiceNote(city, service) ??
+    syracuseServiceNote(city, service);
   return extra ? `${shared} ${extra}` : shared;
 }
 
@@ -150,6 +151,25 @@ function wichitaServiceNote(city: City, service: Service): string | null {
       return `In Wichita, Kansas that often means clearance around ash and elm, ice- or wind-loaded limbs, or a mature canopy on a College Hill or Riverside lot versus a later west Wichita street.`;
     case "emergency-tree-service":
       return `Wichita, Kansas ice storms and plains wind along the Arkansas River corridor are the usual reason someone needs a crew the same day. Say if a tree is on a house, a street, or a College Hill or Riverside lot.`;
+    default:
+      return null;
+  }
+}
+
+/** Geographic context only. No contractors, ratings, or local prices. */
+function syracuseServiceNote(city: City, service: Service): string | null {
+  if (city.slug !== "syracuse-ny") return null;
+  switch (service.slug) {
+    case "tree-service":
+      return `Work here sits on Onondaga Lake in Central New York — lake-effect snow, ice storms, and ash and elm canopy, older Eastwood and Strathmore lots, and later suburbs.`;
+    case "tree-removal":
+      return `Syracuse, New York takedowns often follow ice-storm splits or lake-effect snow load. Tight Eastwood and Strathmore lots are a different access problem than a later suburb.`;
+    case "stump-grinding":
+      return `After an ash, elm, ice-storm, or lake-effect-snow removal in Syracuse, New York, the stump is still a second visit — whether the lot is an older Eastwood or Strathmore parcel or a later suburban yard.`;
+    case "tree-trimming":
+      return `In Syracuse, New York that often means clearance around ash and elm, ice- or snow-loaded limbs, or a mature canopy on an Eastwood or Strathmore lot versus a later suburban street.`;
+    case "emergency-tree-service":
+      return `Syracuse, New York ice storms and lake-effect snow along the Onondaga Lake corridor are the usual reason someone needs a crew the same day. Say if a tree is on a house, a street, or an Eastwood or Strathmore lot.`;
     default:
       return null;
   }
