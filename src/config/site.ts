@@ -230,6 +230,16 @@ export const cities: City[] = [
       "The Arkansas River and the Wichita metro, ice storms, plains wind, and an ash and elm canopy shape a lot of Wichita, Kansas work. Older College Hill and Riverside lots, and later west Wichita subdivisions come up often.",
   },
   {
+    slug: "syracuse-ny",
+    name: "Syracuse",
+    state: "New York",
+    stateAbbr: "NY",
+    status: "live",
+    nearbySlugs: [],
+    setting:
+      "Onondaga Lake and Central New York, lake-effect snow, ice storms, and an ash and elm canopy shape a lot of Syracuse, New York work. Older Eastwood and Strathmore lots, and later suburbs come up often.",
+  },
+  {
     slug: "kettering-oh",
     name: "Kettering",
     state: "Ohio",
