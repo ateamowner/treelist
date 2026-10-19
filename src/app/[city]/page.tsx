@@ -83,7 +83,7 @@ export default async function CityHubPage({
             {city.status === "coming_soon" ? " · Coming soon" : null}
           </p>
           <h1 className="mt-2 font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
-            Tree service in {city.name}, {city.stateAbbr}
+            {`Tree service in ${city.name}, ${city.stateAbbr}`}
           </h1>
           {city.status === "coming_soon" ? (
             <p className="mt-4 text-base leading-7">
@@ -109,7 +109,7 @@ export default async function CityHubPage({
           <p className="mt-3 text-base leading-7">{city.setting}</p>
 
           <h2 className="mt-8 font-heading text-xl font-semibold">
-            Services in {city.name}
+            {`Services in ${city.name}`}
           </h2>
           <ul className="mt-3 grid gap-3">
             {services.map((service) => (
