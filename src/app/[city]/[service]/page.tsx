@@ -32,6 +32,7 @@ import {
   publisherLocalBusiness,
   servicePageBreadcrumbs,
 } from "@/lib/schema";
+import { shareMeta } from "@/lib/share-meta";
 
 export const dynamicParams = false;
 
@@ -60,13 +61,7 @@ export async function generateMetadata({
     title,
     description,
     alternates: { canonical: servicePath(city, service) },
-    openGraph: {
-      title,
-      description,
-      url: servicePath(city, service),
-      siteName: site.name,
-      type: "website",
-    },
+    ...shareMeta(title, description, servicePath(city, service)),
   };
 }
 
