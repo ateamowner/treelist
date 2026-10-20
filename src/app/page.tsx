@@ -9,16 +9,22 @@ import {
   services,
   site,
 } from "@/config/site";
+import { shareMeta } from "@/lib/share-meta";
+
+const title = `TreeList: Find the Best Tree Service Companies Near You`;
+const description =
+  site.description;
 
 export const metadata: Metadata = {
-  title: `${site.name} — tree service directory`,
-  description: site.description,
+  title,
+  description,
   alternates: { canonical: "/" },
   // Bing msvalidate.01: leave unset until Anthony pastes the real Bing
   // Webmaster Tools code for treelist.ai. Do not invent a token.
   verification: {
     google: "vcnYdnF1KMLOxoxGk0uojn1SIPKQfuevoOKTrtdVg40",
   },
+  ...shareMeta(title, description, "/"),
 };
 
 export default function HomePage() {

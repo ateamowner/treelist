@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { liveCitySlugs, servicePath, site } from "@/config/site";
+import { shareMeta } from "@/lib/share-meta";
+
+const title = `For Tree Companies: Listings & Leads on ${site.name}`;
+const description =
+  `How contractors buy ${site.name} listings and exclusive leads. Standard, featured, and exclusive. No credit card on this page.`;
 
 export const metadata: Metadata = {
-  title: `For tree companies — ${site.name}`,
-  description: `How contractors buy ${site.name} listings and exclusive leads. Standard, featured, and exclusive. No credit card on this page.`,
+  title,
+  description,
   alternates: { canonical: "/for-pros/" },
+  ...shareMeta(title, description, "/for-pros/"),
 };
 
 export default function ForProsPage() {
