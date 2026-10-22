@@ -20,7 +20,7 @@ import { hubFaqs } from "@/lib/content";
 import {
   faqPageSchema,
   hubBreadcrumbs,
-  publisherLocalBusiness,
+  publisherOrganization,
 } from "@/lib/schema";
 
 export const dynamicParams = false;
@@ -64,7 +64,7 @@ export default async function CityHubPage({
     <article className="mx-auto w-full max-w-6xl px-4 py-8 sm:px-6 sm:py-10">
       <JsonLd
         data={[
-          publisherLocalBusiness(city),
+          publisherOrganization(city),
           faqPageSchema(questions),
           hubBreadcrumbs(city),
         ]}
