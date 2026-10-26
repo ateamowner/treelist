@@ -244,7 +244,7 @@ export const cities: City[] = [
     name: "Kettering",
     state: "Ohio",
     stateAbbr: "OH",
-    status: "coming_soon",
+    status: "live",
     parentSlug: "dayton-oh",
     nearbySlugs: [
       "dayton-oh",
@@ -254,14 +254,14 @@ export const cities: City[] = [
       "fairborn-oh",
     ],
     setting:
-      "A southern suburb of Dayton with residential streets and mature shade trees. This URL is open so nearby-city links resolve.",
+      "A southern suburb of Dayton with residential streets and mature shade trees.",
   },
   {
     slug: "beavercreek-oh",
     name: "Beavercreek",
     state: "Ohio",
     stateAbbr: "OH",
-    status: "coming_soon",
+    status: "live",
     parentSlug: "dayton-oh",
     nearbySlugs: [
       "dayton-oh",
@@ -271,14 +271,14 @@ export const cities: City[] = [
       "fairborn-oh",
     ],
     setting:
-      "An eastern suburb of Dayton, near Wright-Patterson Air Force Base, with a mix of subdivisions and woodlots. This URL is open so nearby-city links resolve.",
+      "An eastern suburb of Dayton, near Wright-Patterson Air Force Base, with a mix of subdivisions and woodlots.",
   },
   {
     slug: "huber-heights-oh",
     name: "Huber Heights",
     state: "Ohio",
     stateAbbr: "OH",
-    status: "coming_soon",
+    status: "live",
     parentSlug: "dayton-oh",
     nearbySlugs: [
       "dayton-oh",
@@ -288,14 +288,14 @@ export const cities: City[] = [
       "fairborn-oh",
     ],
     setting:
-      "A northern suburb of Dayton with residential lots and street trees. This URL is open so nearby-city links resolve.",
+      "A northern suburb of Dayton with residential lots and street trees.",
   },
   {
     slug: "springfield-oh",
     name: "Springfield",
     state: "Ohio",
     stateAbbr: "OH",
-    status: "coming_soon",
+    status: "live",
     parentSlug: "dayton-oh",
     nearbySlugs: [
       "dayton-oh",
@@ -305,14 +305,14 @@ export const cities: City[] = [
       "fairborn-oh",
     ],
     setting:
-      "A city northeast of Dayton in Clark County. This URL is open so nearby-city links resolve.",
+      "A city northeast of Dayton in Clark County.",
   },
   {
     slug: "fairborn-oh",
     name: "Fairborn",
     state: "Ohio",
     stateAbbr: "OH",
-    status: "coming_soon",
+    status: "live",
     parentSlug: "dayton-oh",
     nearbySlugs: [
       "dayton-oh",
@@ -322,7 +322,7 @@ export const cities: City[] = [
       "springfield-oh",
     ],
     setting:
-      "A Dayton-area city next to Wright-Patterson Air Force Base. This URL is open so nearby-city links resolve.",
+      "A Dayton-area city next to Wright-Patterson Air Force Base.",
   },
   {
     slug: "bethel-park-pa",

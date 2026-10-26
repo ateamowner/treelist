@@ -26,12 +26,18 @@ import {
   introParagraphs,
   metaDescription,
 } from "@/lib/content";
-import { getListings } from "@/lib/listings";
+import {
+  formatVerifiedDate,
+  getListings,
+  isServicePageIndexable,
+  newestVerifiedDate,
+} from "@/lib/listings";
 import {
   faqPageSchema,
   listingsItemListSchema,
   publisherOrganization,
   servicePageBreadcrumbs,
+  webPageSchema,
 } from "@/lib/schema";
 
 export const dynamicParams = false;
@@ -61,6 +67,10 @@ export async function generateMetadata({
     title,
     description,
     alternates: { canonical: servicePath(city, service) },
+    // Thin-page rule: under 3 verified listings -> noindex (links still followed).
+    ...(isServicePageIndexable(city, service)
+      ? {}
+      : { robots: { index: false, follow: true } }),
     openGraph: {
       title,
       description,
@@ -88,6 +98,7 @@ export default async function ServicePage({
   const questions = faqs(city, service);
   const listings = getListings(city.slug, service.slug);
   const isStub = city.status === "coming_soon" || service.slug !== "tree-service";
+  const updated = newestVerifiedDate(listings);
 
   return (
     <article className="mx-auto w-full max-w-6xl px-4 py-8 sm:px-6 sm:py-10">
@@ -96,6 +107,7 @@ export default async function ServicePage({
           publisherOrganization(city),
           faqPageSchema(questions),
           servicePageBreadcrumbs(city, service),
+          webPageSchema(servicePath(city, service), heading, updated),
           ...(listings.length
             ? [listingsItemListSchema(city, service, listings)]
             : []),
@@ -122,6 +134,14 @@ export default async function ServicePage({
           <h1 className="mt-2 font-heading text-3xl font-semibold tracking-tight text-balance sm:text-4xl">
             {heading}
           </h1>
+          {updated ? (
+            <p className="mt-2 text-sm text-muted-foreground">
+              Updated{" "}
+              <time dateTime={updated}>{formatVerifiedDate(updated)}</time>
+              {" "}· {listings.length} verified{" "}
+              {listings.length === 1 ? "listing" : "listings"}
+            </p>
+          ) : null}
           <p className="mt-3 rounded-md border border-border bg-muted/60 px-3 py-2 text-sm">
             {site.name} is a directory, not one shop. Featured spots are paid
             and labeled.

@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { cities, cityPath, servicePath, services, site } from "@/config/site";
+import { isHubIndexable, isServicePageIndexable } from "@/lib/listings";
 
 export const dynamic = "force-static";
 
@@ -19,14 +20,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: path === "/" ? 1 : 0.4,
   }));
 
+  // Thin-page rule: noindex pages (under 3 verified listings) stay out of the sitemap.
   const cityRoutes = cities.flatMap((city) => [
-    {
+    ...(isHubIndexable(city) ? [{
       url: loc(cityPath(city)),
       lastModified: new Date(),
       changeFrequency: "weekly" as const,
       priority: city.status === "live" ? 0.8 : 0.4,
-    },
-    ...services.map((service) => ({
+    }] : []),
+    ...services.filter((service) => isServicePageIndexable(city, service)).map((service) => ({
       url: loc(servicePath(city, service)),
       lastModified: new Date(),
       changeFrequency: "weekly" as const,

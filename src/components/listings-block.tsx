@@ -1,4 +1,5 @@
 import { site } from "@/config/site";
+import { formatVerifiedDate } from "@/lib/listings";
 import type { Listing } from "@/types/listing";
 
 const TIER_LABEL: Record<Listing["tier"], string> = {
@@ -60,9 +61,27 @@ export function ListingsBlock({ listings }: { listings: Listing[] }) {
                 <p className="mt-1 text-sm text-muted-foreground">{listing.blurb}</p>
               ) : null}
               <dl className="mt-3 grid gap-1 text-sm">
+                {listing.services && listing.services.length > 0 ? (
+                  <div>
+                    <dt className="inline font-medium">Services: </dt>
+                    <dd className="inline">{listing.services.join(", ")}</dd>
+                  </div>
+                ) : null}
+                {listing.emergency === true ? (
+                  <div>
+                    <dt className="inline font-medium">Emergency / 24-hour: </dt>
+                    <dd className="inline">Yes (per company site)</dd>
+                  </div>
+                ) : null}
+                {listing.in_business_since ? (
+                  <div>
+                    <dt className="inline font-medium">In business since: </dt>
+                    <dd className="inline">{listing.in_business_since}</dd>
+                  </div>
+                ) : null}
                 {listing.areas_served.length > 0 ? (
                   <div>
-                    <dt className="inline font-medium">Areas served: </dt>
+                    <dt className="inline font-medium">Service area: </dt>
                     <dd className="inline">{listing.areas_served.join(", ")}</dd>
                   </div>
                 ) : null}
@@ -80,6 +99,26 @@ export function ListingsBlock({ listings }: { listings: Listing[] }) {
                   <div>
                     <dt className="inline font-medium">License: </dt>
                     <dd className="inline">{listing.license_id}</dd>
+                  </div>
+                ) : null}
+                {listing.bbb_url ? (
+                  <div>
+                    <dt className="inline font-medium">BBB profile: </dt>
+                    <dd className="inline">
+                      <a href={listing.bbb_url} rel="noopener nofollow" className="underline">
+                        View on BBB.org
+                      </a>
+                    </dd>
+                  </div>
+                ) : null}
+                {listing.last_verified ? (
+                  <div>
+                    <dt className="inline font-medium">Last verified: </dt>
+                    <dd className="inline">
+                      <time dateTime={listing.last_verified}>
+                        {formatVerifiedDate(listing.last_verified)}
+                      </time>
+                    </dd>
                   </div>
                 ) : null}
               </dl>

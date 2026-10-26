@@ -21,7 +21,14 @@ import {
   faqPageSchema,
   hubBreadcrumbs,
   publisherOrganization,
+  webPageSchema,
 } from "@/lib/schema";
+import {
+  formatVerifiedDate,
+  getListings,
+  isHubIndexable,
+  newestVerifiedDate,
+} from "@/lib/listings";
 
 export const dynamicParams = false;
 
@@ -44,6 +51,8 @@ export async function generateMetadata({
     title,
     description,
     alternates: { canonical: cityPath(city) },
+    // Thin-page rule: hub follows its tree-service page (under 3 verified listings -> noindex).
+    ...(isHubIndexable(city) ? {} : { robots: { index: false, follow: true } }),
   };
 }
 
@@ -59,6 +68,7 @@ export default async function CityHubPage({
   const treeService = getService("tree-service");
   const parent = getParentCity(city);
   const questions = hubFaqs(city);
+  const updated = newestVerifiedDate(getListings(city.slug, "tree-service"));
 
   return (
     <article className="mx-auto w-full max-w-6xl px-4 py-8 sm:px-6 sm:py-10">
@@ -67,6 +77,11 @@ export default async function CityHubPage({
           publisherOrganization(city),
           faqPageSchema(questions),
           hubBreadcrumbs(city),
+          webPageSchema(
+            cityPath(city),
+            `Tree service in ${city.name}, ${city.stateAbbr}`,
+            updated
+          ),
         ]}
       />
       <Breadcrumbs
@@ -85,6 +100,12 @@ export default async function CityHubPage({
           <h1 className="mt-2 font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
             Tree service in {city.name}, {city.stateAbbr}
           </h1>
+          {updated ? (
+            <p className="mt-2 text-sm text-muted-foreground">
+              Updated{" "}
+              <time dateTime={updated}>{formatVerifiedDate(updated)}</time>
+            </p>
+          ) : null}
           {city.status === "coming_soon" ? (
             <p className="mt-4 text-base leading-7">
               The {city.name} hub is coming soon. {site.name} opened this URL so

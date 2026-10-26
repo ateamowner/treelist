@@ -66,6 +66,10 @@ export function listingsItemListSchema(
         description: listing.blurb,
         ...(listing.profile_url ? { url: listing.profile_url } : {}),
         ...(listing.license_id ? { identifier: listing.license_id } : {}),
+        ...(listing.bbb_url ? { sameAs: [listing.bbb_url] } : {}),
+        ...(listing.in_business_since
+          ? { foundingDate: String(listing.in_business_since) }
+          : {}),
         areaServed: listing.areas_served.map((area) => ({
           "@type": "City",
           name: area,
@@ -175,5 +179,26 @@ export function liveCitiesItemListSchema(
       name: `Tree service in ${city.name}, ${city.stateAbbr}`,
       url: `${siteOrigin()}${servicePathFor(city)}`,
     })),
+  };
+}
+
+/**
+ * WebPage with dateModified taken from the newest listing verify date on the
+ * page (never the build time). No date -> no dateModified.
+ */
+export function webPageSchema(
+  path: string,
+  name: string,
+  dateModified?: string
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${breadcrumbItemUrl(path)}#webpage`,
+    url: breadcrumbItemUrl(path),
+    name,
+    isPartOf: { "@id": `${siteOrigin()}/#website` },
+    publisher: { "@id": organizationId() },
+    ...(dateModified ? { dateModified } : {}),
   };
 }

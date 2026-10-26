@@ -15,7 +15,22 @@
     "license_id": "",
     "blurb": "North Dayton family-run tree company in business since 1974 (per BBB), doing pruning, removal, land clearing and 24-hour storm and dangerous-tree calls (south-side line 937-433-1819). Its site says it has an ISA Certified Arborist. Ohio does not issue a state tree-service license. Phone matches the company site and its BBB profile. Last verified 10/26/2026. Sources: https://www.aackermantreeservice.com/index.php/contact-us and https://www.bbb.org/us/oh/dayton/profile/tree-service/a-ackerman-tree-service-inc-0322-215",
     "tier": "standard",
-    "profile_url": "https://aackermantreeservice.com/"
+    "profile_url": "https://aackermantreeservice.com/",
+    "services": [
+      "Tree pruning",
+      "Tree removal",
+      "Land clearing",
+      "24-hour storm and dangerous-tree calls"
+    ],
+    "emergency": true,
+    "in_business_since": 1974,
+    "bbb_url": "https://www.bbb.org/us/oh/dayton/profile/tree-service/a-ackerman-tree-service-inc-0322-215",
+    "last_verified": "2026-10-26",
+    "field_sources": {
+      "services": "https://www.aackermantreeservice.com/index.php/contact-us",
+      "emergency": "https://www.aackermantreeservice.com/index.php/contact-us",
+      "in_business_since": "https://www.bbb.org/us/oh/dayton/profile/tree-service/a-ackerman-tree-service-inc-0322-215"
+    }
   },
   {
     "city_slug": "dayton-oh",
@@ -33,7 +48,23 @@
     "license_id": "",
     "blurb": "Dayton tree and landscaping shop at 2910 Needmore Rd, serving the area since 1983 (per company site): tree and shrub trimming and removal, stump work and 24-hour emergency storm service. Its site says a certified arborist is on hand. Ohio does not issue a state tree-service license. Address and phone match the company site and its BBB listing. Last verified 10/26/2026. Sources: https://www.aaronstreeservicellc.com/about-us/ and https://www.bbb.org/us/oh/dayton/category/arborist/accredited",
     "tier": "standard",
-    "profile_url": "https://www.aaronstreeservicellc.com/"
+    "profile_url": "https://www.aaronstreeservicellc.com/",
+    "services": [
+      "Tree and shrub trimming",
+      "Tree removal",
+      "Stump work",
+      "24-hour emergency storm service",
+      "Landscaping"
+    ],
+    "emergency": true,
+    "in_business_since": 1983,
+    "bbb_url": "https://www.bbb.org/us/oh/dayton/profile/tree-service/aarons-tree-and-landscaping-services-llc-0322-165",
+    "last_verified": "2026-10-26",
+    "field_sources": {
+      "services": "https://www.aaronstreeservicellc.com/about-us/",
+      "emergency": "https://www.aaronstreeservicellc.com/about-us/",
+      "in_business_since": "https://www.aaronstreeservicellc.com/about-us/"
+    }
   },
   {
     "city_slug": "dayton-oh",
@@ -46,6 +77,676 @@
     "license_id": "",
     "blurb": "Dayton tree company at 1000 Pruden Ave, started in 2000 (per BBB), doing pruning, tree and stump removal, Emerald Ash Borer treatment, cabling and bracing for homes, businesses and public properties. Its site says quotes come from ISA-certified arborists. Ohio does not issue a state tree-service license. Address and Dayton phone match the company site and its BBB profile. Last verified 10/26/2026. Sources: https://www.treecareinc.com/get-a-quote/ and https://www.bbb.org/us/oh/dayton/profile/tree-service/tree-care-inc-0322-5001733",
     "tier": "standard",
-    "profile_url": "https://www.treecareinc.com/"
+    "profile_url": "https://www.treecareinc.com/",
+    "services": [
+      "Pruning",
+      "Tree removal",
+      "Stump removal",
+      "Emerald Ash Borer treatment",
+      "Cabling and bracing"
+    ],
+    "in_business_since": 2000,
+    "bbb_url": "https://www.bbb.org/us/oh/dayton/profile/tree-service/tree-care-inc-0322-5001733",
+    "last_verified": "2026-10-26",
+    "field_sources": {
+      "services": "https://www.treecareinc.com/get-a-quote/",
+      "in_business_since": "https://www.bbb.org/us/oh/dayton/profile/tree-service/tree-care-inc-0322-5001733"
+    }
+  },
+  {
+    "city_slug": "kettering-oh",
+    "service_slug": "tree-service",
+    "name": "1st Choice R&R Tree Service LLC",
+    "areas_served": [
+      "Dayton",
+      "Oakwood",
+      "Kettering",
+      "Centerville",
+      "Beavercreek",
+      "Xenia",
+      "Bellbrook",
+      "Miamisburg",
+      "Moraine",
+      "Huber Heights",
+      "Fairborn",
+      "Springfield",
+      "Englewood",
+      "Vandalia",
+      "Troy",
+      "Trotwood"
+    ],
+    "phone": "(937) 572-9846",
+    "license_id": "",
+    "blurb": "Locally owned tree company at 3189 Plainfield Rd (BBB lists it in Kettering, OH 45432): tree removal, trimming and pruning, stump grinding, land clearing and clean-up, with free estimates. Its site lists Kettering, Beavercreek, Huber Heights, Fairborn and Springfield in its service area. Ohio does not issue a state tree-service license. Phone matches the company site and its BBB profile. Last verified 10/26/2026. Sources: https://1stchoicerrtreeservice.com/services/ and https://www.bbb.org/us/oh/kettering/profile/tree-service/1st-choice-r-r-tree-service-0322-52716",
+    "tier": "standard",
+    "profile_url": "https://1stchoicerrtreeservice.com/",
+    "services": [
+      "Tree removal",
+      "Tree trimming and pruning",
+      "Stump grinding",
+      "Land clearing",
+      "Clean-up",
+      "Firewood delivery"
+    ],
+    "bbb_url": "https://www.bbb.org/us/oh/kettering/profile/tree-service/1st-choice-r-r-tree-service-0322-52716",
+    "last_verified": "2026-10-26",
+    "field_sources": {
+      "services": "https://1stchoicerrtreeservice.com/services/",
+      "areas_served": "https://1stchoicerrtreeservice.com/services/"
+    }
+  },
+  {
+    "city_slug": "kettering-oh",
+    "service_slug": "tree-service",
+    "name": "Cundiff Town & Country Tree Service",
+    "areas_served": [
+      "Beavercreek",
+      "Kettering",
+      "Xenia",
+      "Centerville",
+      "South Dayton"
+    ],
+    "phone": "(937) 429-0940",
+    "license_id": "",
+    "blurb": "Family-owned Beavercreek tree company (BBB lists 4212 Indian Ripple Rd, Beavercreek, OH 45440); its site says the family business dates to 1945. Tree and bush removal, trimming and pruning, and tree health care, with free estimates. Its site lists Kettering, Xenia, Centerville and Beavercreek as its service area and says it has ISA members on staff. Ohio does not issue a state tree-service license. Phone matches the company site and its BBB profile. Last verified 10/26/2026. Sources: https://cundifftownandcountrytreeservice.com/ and https://www.bbb.org/us/oh/beavercreek/profile/tree-service/cundiff-town-country-tree-service-0322-1787",
+    "tier": "standard",
+    "profile_url": "https://cundifftownandcountrytreeservice.com/",
+    "services": [
+      "Tree and bush removal",
+      "Trimming and pruning",
+      "Tree health care and pest control"
+    ],
+    "in_business_since": 1945,
+    "bbb_url": "https://www.bbb.org/us/oh/beavercreek/profile/tree-service/cundiff-town-country-tree-service-0322-1787",
+    "last_verified": "2026-10-26",
+    "field_sources": {
+      "services": "https://cundifftownandcountrytreeservice.com/services/",
+      "areas_served": "https://cundifftownandcountrytreeservice.com/",
+      "in_business_since": "https://cundifftownandcountrytreeservice.com/"
+    }
+  },
+  {
+    "city_slug": "kettering-oh",
+    "service_slug": "tree-service",
+    "name": "Tackett's Tree Service",
+    "areas_served": [
+      "Dayton",
+      "Beavercreek",
+      "Centerville",
+      "Oakwood",
+      "Kettering",
+      "Xenia",
+      "Springboro",
+      "Miamisburg",
+      "Bellbrook",
+      "Yellow Springs",
+      "Fairborn",
+      "Huber Heights",
+      "Englewood"
+    ],
+    "phone": "(937) 630-2743",
+    "license_id": "",
+    "blurb": "Dayton tree company headquartered at 1905 Radio Rd, Dayton, OH 45431, with a Beavercreek office at 1340 N Fairfield Rd (per its site): tree removal, canopy thinning, stump grinding, lot clearing and 24/7 emergency storm response. Its site lists Beavercreek, Kettering, Fairborn and Huber Heights in its Montgomery and Greene County service area. Its site gives two different start years, so we do not show one. Ohio does not issue a state tree-service license. Phone and Radio Rd address match the company site and its BBB profile. Last verified 10/26/2026. Sources: https://tackettstreeservice.com/ and https://www.bbb.org/us/oh/dayton/profile/tree-service/tacketts-tree-service-0322-23808",
+    "tier": "standard",
+    "profile_url": "https://tackettstreeservice.com/",
+    "services": [
+      "Tree removal",
+      "Canopy thinning",
+      "24/7 emergency storm response",
+      "Stump grinding",
+      "Lot clearing",
+      "Firewood delivery"
+    ],
+    "emergency": true,
+    "bbb_url": "https://www.bbb.org/us/oh/dayton/profile/tree-service/tacketts-tree-service-0322-23808",
+    "last_verified": "2026-10-26",
+    "field_sources": {
+      "services": "https://tackettstreeservice.com/",
+      "emergency": "https://tackettstreeservice.com/",
+      "areas_served": "https://tackettstreeservice.com/"
+    }
+  },
+  {
+    "city_slug": "kettering-oh",
+    "service_slug": "tree-service",
+    "name": "Huffman Tree Company",
+    "areas_served": [
+      "Springfield",
+      "Urbana",
+      "London",
+      "Beavercreek",
+      "Kettering"
+    ],
+    "phone": "(937) 828-1682",
+    "license_id": "",
+    "blurb": "Springfield tree company (BBB lists 2002 E Pleasant St, Springfield, OH): tree removal, trimming and pruning, stump grinding, land clearing and 24-hour emergency tree removal, with free estimates. Its site lists Springfield, Urbana, London, Beavercreek and Kettering as areas served. Ohio does not issue a state tree-service license. Phone matches the company site and its BBB profile. Last verified 10/26/2026. Sources: https://www.huffmantree.com/ and https://www.bbb.org/us/oh/springfield/profile/tree-service/huffman-tree-company-0322-1448",
+    "tier": "standard",
+    "profile_url": "https://www.huffmantree.com/",
+    "services": [
+      "Tree removal",
+      "Tree trimming and pruning",
+      "Stump grinding and land clearing",
+      "24/7 emergency tree removal"
+    ],
+    "emergency": true,
+    "bbb_url": "https://www.bbb.org/us/oh/springfield/profile/tree-service/huffman-tree-company-0322-1448",
+    "last_verified": "2026-10-26",
+    "field_sources": {
+      "services": "https://www.huffmantree.com/",
+      "emergency": "https://www.huffmantree.com/",
+      "areas_served": "https://www.huffmantree.com/"
+    }
+  },
+  {
+    "city_slug": "beavercreek-oh",
+    "service_slug": "tree-service",
+    "name": "Cundiff Town & Country Tree Service",
+    "areas_served": [
+      "Beavercreek",
+      "Kettering",
+      "Xenia",
+      "Centerville",
+      "South Dayton"
+    ],
+    "phone": "(937) 429-0940",
+    "license_id": "",
+    "blurb": "Family-owned Beavercreek tree company (BBB lists 4212 Indian Ripple Rd, Beavercreek, OH 45440); its site says the family business dates to 1945. Tree and bush removal, trimming and pruning, and tree health care, with free estimates. Its site lists Kettering, Xenia, Centerville and Beavercreek as its service area and says it has ISA members on staff. Ohio does not issue a state tree-service license. Phone matches the company site and its BBB profile. Last verified 10/26/2026. Sources: https://cundifftownandcountrytreeservice.com/ and https://www.bbb.org/us/oh/beavercreek/profile/tree-service/cundiff-town-country-tree-service-0322-1787",
+    "tier": "standard",
+    "profile_url": "https://cundifftownandcountrytreeservice.com/",
+    "services": [
+      "Tree and bush removal",
+      "Trimming and pruning",
+      "Tree health care and pest control"
+    ],
+    "in_business_since": 1945,
+    "bbb_url": "https://www.bbb.org/us/oh/beavercreek/profile/tree-service/cundiff-town-country-tree-service-0322-1787",
+    "last_verified": "2026-10-26",
+    "field_sources": {
+      "services": "https://cundifftownandcountrytreeservice.com/services/",
+      "areas_served": "https://cundifftownandcountrytreeservice.com/",
+      "in_business_since": "https://cundifftownandcountrytreeservice.com/"
+    }
+  },
+  {
+    "city_slug": "beavercreek-oh",
+    "service_slug": "tree-service",
+    "name": "Tackett's Tree Service",
+    "areas_served": [
+      "Dayton",
+      "Beavercreek",
+      "Centerville",
+      "Oakwood",
+      "Kettering",
+      "Xenia",
+      "Springboro",
+      "Miamisburg",
+      "Bellbrook",
+      "Yellow Springs",
+      "Fairborn",
+      "Huber Heights",
+      "Englewood"
+    ],
+    "phone": "(937) 630-2743",
+    "license_id": "",
+    "blurb": "Dayton tree company headquartered at 1905 Radio Rd, Dayton, OH 45431, with a Beavercreek office at 1340 N Fairfield Rd (per its site): tree removal, canopy thinning, stump grinding, lot clearing and 24/7 emergency storm response. Its site lists Beavercreek, Kettering, Fairborn and Huber Heights in its Montgomery and Greene County service area. Its site gives two different start years, so we do not show one. Ohio does not issue a state tree-service license. Phone and Radio Rd address match the company site and its BBB profile. Last verified 10/26/2026. Sources: https://tackettstreeservice.com/ and https://www.bbb.org/us/oh/dayton/profile/tree-service/tacketts-tree-service-0322-23808",
+    "tier": "standard",
+    "profile_url": "https://tackettstreeservice.com/",
+    "services": [
+      "Tree removal",
+      "Canopy thinning",
+      "24/7 emergency storm response",
+      "Stump grinding",
+      "Lot clearing",
+      "Firewood delivery"
+    ],
+    "emergency": true,
+    "bbb_url": "https://www.bbb.org/us/oh/dayton/profile/tree-service/tacketts-tree-service-0322-23808",
+    "last_verified": "2026-10-26",
+    "field_sources": {
+      "services": "https://tackettstreeservice.com/",
+      "emergency": "https://tackettstreeservice.com/",
+      "areas_served": "https://tackettstreeservice.com/"
+    }
+  },
+  {
+    "city_slug": "beavercreek-oh",
+    "service_slug": "tree-service",
+    "name": "1st Choice R&R Tree Service LLC",
+    "areas_served": [
+      "Dayton",
+      "Oakwood",
+      "Kettering",
+      "Centerville",
+      "Beavercreek",
+      "Xenia",
+      "Bellbrook",
+      "Miamisburg",
+      "Moraine",
+      "Huber Heights",
+      "Fairborn",
+      "Springfield",
+      "Englewood",
+      "Vandalia",
+      "Troy",
+      "Trotwood"
+    ],
+    "phone": "(937) 572-9846",
+    "license_id": "",
+    "blurb": "Locally owned tree company at 3189 Plainfield Rd (BBB lists it in Kettering, OH 45432): tree removal, trimming and pruning, stump grinding, land clearing and clean-up, with free estimates. Its site lists Kettering, Beavercreek, Huber Heights, Fairborn and Springfield in its service area. Ohio does not issue a state tree-service license. Phone matches the company site and its BBB profile. Last verified 10/26/2026. Sources: https://1stchoicerrtreeservice.com/services/ and https://www.bbb.org/us/oh/kettering/profile/tree-service/1st-choice-r-r-tree-service-0322-52716",
+    "tier": "standard",
+    "profile_url": "https://1stchoicerrtreeservice.com/",
+    "services": [
+      "Tree removal",
+      "Tree trimming and pruning",
+      "Stump grinding",
+      "Land clearing",
+      "Clean-up",
+      "Firewood delivery"
+    ],
+    "bbb_url": "https://www.bbb.org/us/oh/kettering/profile/tree-service/1st-choice-r-r-tree-service-0322-52716",
+    "last_verified": "2026-10-26",
+    "field_sources": {
+      "services": "https://1stchoicerrtreeservice.com/services/",
+      "areas_served": "https://1stchoicerrtreeservice.com/services/"
+    }
+  },
+  {
+    "city_slug": "beavercreek-oh",
+    "service_slug": "tree-service",
+    "name": "Huffman Tree Company",
+    "areas_served": [
+      "Springfield",
+      "Urbana",
+      "London",
+      "Beavercreek",
+      "Kettering"
+    ],
+    "phone": "(937) 828-1682",
+    "license_id": "",
+    "blurb": "Springfield tree company (BBB lists 2002 E Pleasant St, Springfield, OH): tree removal, trimming and pruning, stump grinding, land clearing and 24-hour emergency tree removal, with free estimates. Its site lists Springfield, Urbana, London, Beavercreek and Kettering as areas served. Ohio does not issue a state tree-service license. Phone matches the company site and its BBB profile. Last verified 10/26/2026. Sources: https://www.huffmantree.com/ and https://www.bbb.org/us/oh/springfield/profile/tree-service/huffman-tree-company-0322-1448",
+    "tier": "standard",
+    "profile_url": "https://www.huffmantree.com/",
+    "services": [
+      "Tree removal",
+      "Tree trimming and pruning",
+      "Stump grinding and land clearing",
+      "24/7 emergency tree removal"
+    ],
+    "emergency": true,
+    "bbb_url": "https://www.bbb.org/us/oh/springfield/profile/tree-service/huffman-tree-company-0322-1448",
+    "last_verified": "2026-10-26",
+    "field_sources": {
+      "services": "https://www.huffmantree.com/",
+      "emergency": "https://www.huffmantree.com/",
+      "areas_served": "https://www.huffmantree.com/"
+    }
+  },
+  {
+    "city_slug": "huber-heights-oh",
+    "service_slug": "tree-service",
+    "name": "C&S Tree Service & Recycling Center",
+    "areas_served": [
+      "Springfield",
+      "New Carlisle",
+      "Xenia",
+      "Fairborn",
+      "South Charleston",
+      "South Vienna",
+      "London",
+      "Donnelsville",
+      "Medway",
+      "Huber Heights",
+      "Tipp City",
+      "Enon",
+      "Yellow Springs"
+    ],
+    "phone": "(937) 323-4273",
+    "license_id": "",
+    "blurb": "Family-owned Springfield tree company and yard-waste recycling center at 2551 Dayton Rd, Springfield, OH 45506, in business since 1980 (per its site): tree trimming and removal, stump grinding, storm damage cleanup and cabling, with 24-hour emergency service. Its site says it has certified arborists on staff and is licensed by the City of Springfield, and lists Fairborn and Huber Heights among the towns it serves. Address matches its BBB profile (BBB shows an older phone; the phone here is from the company site). Last verified 10/26/2026. Sources: https://www.cstreemulch.com/ and https://www.bbb.org/us/oh/springfield/profile/tree-service/c-s-tree-service-llc-0322-1109",
+    "tier": "standard",
+    "profile_url": "https://www.cstreemulch.com/",
+    "services": [
+      "Tree trimming",
+      "Tree removal",
+      "Stump grinding",
+      "Storm damage cleanup",
+      "Cabling",
+      "Bucket truck and aerial lift work"
+    ],
+    "emergency": true,
+    "in_business_since": 1980,
+    "bbb_url": "https://www.bbb.org/us/oh/springfield/profile/tree-service/c-s-tree-service-llc-0322-1109",
+    "last_verified": "2026-10-26",
+    "field_sources": {
+      "services": "https://www.cstreemulch.com/tree-services",
+      "emergency": "https://www.cstreemulch.com/",
+      "areas_served": "https://www.cstreemulch.com/",
+      "in_business_since": "https://www.cstreemulch.com/"
+    }
+  },
+  {
+    "city_slug": "huber-heights-oh",
+    "service_slug": "tree-service",
+    "name": "1st Choice R&R Tree Service LLC",
+    "areas_served": [
+      "Dayton",
+      "Oakwood",
+      "Kettering",
+      "Centerville",
+      "Beavercreek",
+      "Xenia",
+      "Bellbrook",
+      "Miamisburg",
+      "Moraine",
+      "Huber Heights",
+      "Fairborn",
+      "Springfield",
+      "Englewood",
+      "Vandalia",
+      "Troy",
+      "Trotwood"
+    ],
+    "phone": "(937) 572-9846",
+    "license_id": "",
+    "blurb": "Locally owned tree company at 3189 Plainfield Rd (BBB lists it in Kettering, OH 45432): tree removal, trimming and pruning, stump grinding, land clearing and clean-up, with free estimates. Its site lists Kettering, Beavercreek, Huber Heights, Fairborn and Springfield in its service area. Ohio does not issue a state tree-service license. Phone matches the company site and its BBB profile. Last verified 10/26/2026. Sources: https://1stchoicerrtreeservice.com/services/ and https://www.bbb.org/us/oh/kettering/profile/tree-service/1st-choice-r-r-tree-service-0322-52716",
+    "tier": "standard",
+    "profile_url": "https://1stchoicerrtreeservice.com/",
+    "services": [
+      "Tree removal",
+      "Tree trimming and pruning",
+      "Stump grinding",
+      "Land clearing",
+      "Clean-up",
+      "Firewood delivery"
+    ],
+    "bbb_url": "https://www.bbb.org/us/oh/kettering/profile/tree-service/1st-choice-r-r-tree-service-0322-52716",
+    "last_verified": "2026-10-26",
+    "field_sources": {
+      "services": "https://1stchoicerrtreeservice.com/services/",
+      "areas_served": "https://1stchoicerrtreeservice.com/services/"
+    }
+  },
+  {
+    "city_slug": "huber-heights-oh",
+    "service_slug": "tree-service",
+    "name": "Tackett's Tree Service",
+    "areas_served": [
+      "Dayton",
+      "Beavercreek",
+      "Centerville",
+      "Oakwood",
+      "Kettering",
+      "Xenia",
+      "Springboro",
+      "Miamisburg",
+      "Bellbrook",
+      "Yellow Springs",
+      "Fairborn",
+      "Huber Heights",
+      "Englewood"
+    ],
+    "phone": "(937) 630-2743",
+    "license_id": "",
+    "blurb": "Dayton tree company headquartered at 1905 Radio Rd, Dayton, OH 45431, with a Beavercreek office at 1340 N Fairfield Rd (per its site): tree removal, canopy thinning, stump grinding, lot clearing and 24/7 emergency storm response. Its site lists Beavercreek, Kettering, Fairborn and Huber Heights in its Montgomery and Greene County service area. Its site gives two different start years, so we do not show one. Ohio does not issue a state tree-service license. Phone and Radio Rd address match the company site and its BBB profile. Last verified 10/26/2026. Sources: https://tackettstreeservice.com/ and https://www.bbb.org/us/oh/dayton/profile/tree-service/tacketts-tree-service-0322-23808",
+    "tier": "standard",
+    "profile_url": "https://tackettstreeservice.com/",
+    "services": [
+      "Tree removal",
+      "Canopy thinning",
+      "24/7 emergency storm response",
+      "Stump grinding",
+      "Lot clearing",
+      "Firewood delivery"
+    ],
+    "emergency": true,
+    "bbb_url": "https://www.bbb.org/us/oh/dayton/profile/tree-service/tacketts-tree-service-0322-23808",
+    "last_verified": "2026-10-26",
+    "field_sources": {
+      "services": "https://tackettstreeservice.com/",
+      "emergency": "https://tackettstreeservice.com/",
+      "areas_served": "https://tackettstreeservice.com/"
+    }
+  },
+  {
+    "city_slug": "fairborn-oh",
+    "service_slug": "tree-service",
+    "name": "C&S Tree Service & Recycling Center",
+    "areas_served": [
+      "Springfield",
+      "New Carlisle",
+      "Xenia",
+      "Fairborn",
+      "South Charleston",
+      "South Vienna",
+      "London",
+      "Donnelsville",
+      "Medway",
+      "Huber Heights",
+      "Tipp City",
+      "Enon",
+      "Yellow Springs"
+    ],
+    "phone": "(937) 323-4273",
+    "license_id": "",
+    "blurb": "Family-owned Springfield tree company and yard-waste recycling center at 2551 Dayton Rd, Springfield, OH 45506, in business since 1980 (per its site): tree trimming and removal, stump grinding, storm damage cleanup and cabling, with 24-hour emergency service. Its site says it has certified arborists on staff and is licensed by the City of Springfield, and lists Fairborn and Huber Heights among the towns it serves. Address matches its BBB profile (BBB shows an older phone; the phone here is from the company site). Last verified 10/26/2026. Sources: https://www.cstreemulch.com/ and https://www.bbb.org/us/oh/springfield/profile/tree-service/c-s-tree-service-llc-0322-1109",
+    "tier": "standard",
+    "profile_url": "https://www.cstreemulch.com/",
+    "services": [
+      "Tree trimming",
+      "Tree removal",
+      "Stump grinding",
+      "Storm damage cleanup",
+      "Cabling",
+      "Bucket truck and aerial lift work"
+    ],
+    "emergency": true,
+    "in_business_since": 1980,
+    "bbb_url": "https://www.bbb.org/us/oh/springfield/profile/tree-service/c-s-tree-service-llc-0322-1109",
+    "last_verified": "2026-10-26",
+    "field_sources": {
+      "services": "https://www.cstreemulch.com/tree-services",
+      "emergency": "https://www.cstreemulch.com/",
+      "areas_served": "https://www.cstreemulch.com/",
+      "in_business_since": "https://www.cstreemulch.com/"
+    }
+  },
+  {
+    "city_slug": "fairborn-oh",
+    "service_slug": "tree-service",
+    "name": "1st Choice R&R Tree Service LLC",
+    "areas_served": [
+      "Dayton",
+      "Oakwood",
+      "Kettering",
+      "Centerville",
+      "Beavercreek",
+      "Xenia",
+      "Bellbrook",
+      "Miamisburg",
+      "Moraine",
+      "Huber Heights",
+      "Fairborn",
+      "Springfield",
+      "Englewood",
+      "Vandalia",
+      "Troy",
+      "Trotwood"
+    ],
+    "phone": "(937) 572-9846",
+    "license_id": "",
+    "blurb": "Locally owned tree company at 3189 Plainfield Rd (BBB lists it in Kettering, OH 45432): tree removal, trimming and pruning, stump grinding, land clearing and clean-up, with free estimates. Its site lists Kettering, Beavercreek, Huber Heights, Fairborn and Springfield in its service area. Ohio does not issue a state tree-service license. Phone matches the company site and its BBB profile. Last verified 10/26/2026. Sources: https://1stchoicerrtreeservice.com/services/ and https://www.bbb.org/us/oh/kettering/profile/tree-service/1st-choice-r-r-tree-service-0322-52716",
+    "tier": "standard",
+    "profile_url": "https://1stchoicerrtreeservice.com/",
+    "services": [
+      "Tree removal",
+      "Tree trimming and pruning",
+      "Stump grinding",
+      "Land clearing",
+      "Clean-up",
+      "Firewood delivery"
+    ],
+    "bbb_url": "https://www.bbb.org/us/oh/kettering/profile/tree-service/1st-choice-r-r-tree-service-0322-52716",
+    "last_verified": "2026-10-26",
+    "field_sources": {
+      "services": "https://1stchoicerrtreeservice.com/services/",
+      "areas_served": "https://1stchoicerrtreeservice.com/services/"
+    }
+  },
+  {
+    "city_slug": "fairborn-oh",
+    "service_slug": "tree-service",
+    "name": "Tackett's Tree Service",
+    "areas_served": [
+      "Dayton",
+      "Beavercreek",
+      "Centerville",
+      "Oakwood",
+      "Kettering",
+      "Xenia",
+      "Springboro",
+      "Miamisburg",
+      "Bellbrook",
+      "Yellow Springs",
+      "Fairborn",
+      "Huber Heights",
+      "Englewood"
+    ],
+    "phone": "(937) 630-2743",
+    "license_id": "",
+    "blurb": "Dayton tree company headquartered at 1905 Radio Rd, Dayton, OH 45431, with a Beavercreek office at 1340 N Fairfield Rd (per its site): tree removal, canopy thinning, stump grinding, lot clearing and 24/7 emergency storm response. Its site lists Beavercreek, Kettering, Fairborn and Huber Heights in its Montgomery and Greene County service area. Its site gives two different start years, so we do not show one. Ohio does not issue a state tree-service license. Phone and Radio Rd address match the company site and its BBB profile. Last verified 10/26/2026. Sources: https://tackettstreeservice.com/ and https://www.bbb.org/us/oh/dayton/profile/tree-service/tacketts-tree-service-0322-23808",
+    "tier": "standard",
+    "profile_url": "https://tackettstreeservice.com/",
+    "services": [
+      "Tree removal",
+      "Canopy thinning",
+      "24/7 emergency storm response",
+      "Stump grinding",
+      "Lot clearing",
+      "Firewood delivery"
+    ],
+    "emergency": true,
+    "bbb_url": "https://www.bbb.org/us/oh/dayton/profile/tree-service/tacketts-tree-service-0322-23808",
+    "last_verified": "2026-10-26",
+    "field_sources": {
+      "services": "https://tackettstreeservice.com/",
+      "emergency": "https://tackettstreeservice.com/",
+      "areas_served": "https://tackettstreeservice.com/"
+    }
+  },
+  {
+    "city_slug": "springfield-oh",
+    "service_slug": "tree-service",
+    "name": "C&S Tree Service & Recycling Center",
+    "areas_served": [
+      "Springfield",
+      "New Carlisle",
+      "Xenia",
+      "Fairborn",
+      "South Charleston",
+      "South Vienna",
+      "London",
+      "Donnelsville",
+      "Medway",
+      "Huber Heights",
+      "Tipp City",
+      "Enon",
+      "Yellow Springs"
+    ],
+    "phone": "(937) 323-4273",
+    "license_id": "",
+    "blurb": "Family-owned Springfield tree company and yard-waste recycling center at 2551 Dayton Rd, Springfield, OH 45506, in business since 1980 (per its site): tree trimming and removal, stump grinding, storm damage cleanup and cabling, with 24-hour emergency service. Its site says it has certified arborists on staff and is licensed by the City of Springfield, and lists Fairborn and Huber Heights among the towns it serves. Address matches its BBB profile (BBB shows an older phone; the phone here is from the company site). Last verified 10/26/2026. Sources: https://www.cstreemulch.com/ and https://www.bbb.org/us/oh/springfield/profile/tree-service/c-s-tree-service-llc-0322-1109",
+    "tier": "standard",
+    "profile_url": "https://www.cstreemulch.com/",
+    "services": [
+      "Tree trimming",
+      "Tree removal",
+      "Stump grinding",
+      "Storm damage cleanup",
+      "Cabling",
+      "Bucket truck and aerial lift work"
+    ],
+    "emergency": true,
+    "in_business_since": 1980,
+    "bbb_url": "https://www.bbb.org/us/oh/springfield/profile/tree-service/c-s-tree-service-llc-0322-1109",
+    "last_verified": "2026-10-26",
+    "field_sources": {
+      "services": "https://www.cstreemulch.com/tree-services",
+      "emergency": "https://www.cstreemulch.com/",
+      "areas_served": "https://www.cstreemulch.com/",
+      "in_business_since": "https://www.cstreemulch.com/"
+    }
+  },
+  {
+    "city_slug": "springfield-oh",
+    "service_slug": "tree-service",
+    "name": "Huffman Tree Company",
+    "areas_served": [
+      "Springfield",
+      "Urbana",
+      "London",
+      "Beavercreek",
+      "Kettering"
+    ],
+    "phone": "(937) 828-1682",
+    "license_id": "",
+    "blurb": "Springfield tree company (BBB lists 2002 E Pleasant St, Springfield, OH): tree removal, trimming and pruning, stump grinding, land clearing and 24-hour emergency tree removal, with free estimates. Its site lists Springfield, Urbana, London, Beavercreek and Kettering as areas served. Ohio does not issue a state tree-service license. Phone matches the company site and its BBB profile. Last verified 10/26/2026. Sources: https://www.huffmantree.com/ and https://www.bbb.org/us/oh/springfield/profile/tree-service/huffman-tree-company-0322-1448",
+    "tier": "standard",
+    "profile_url": "https://www.huffmantree.com/",
+    "services": [
+      "Tree removal",
+      "Tree trimming and pruning",
+      "Stump grinding and land clearing",
+      "24/7 emergency tree removal"
+    ],
+    "emergency": true,
+    "bbb_url": "https://www.bbb.org/us/oh/springfield/profile/tree-service/huffman-tree-company-0322-1448",
+    "last_verified": "2026-10-26",
+    "field_sources": {
+      "services": "https://www.huffmantree.com/",
+      "emergency": "https://www.huffmantree.com/",
+      "areas_served": "https://www.huffmantree.com/"
+    }
+  },
+  {
+    "city_slug": "springfield-oh",
+    "service_slug": "tree-service",
+    "name": "1st Choice R&R Tree Service LLC",
+    "areas_served": [
+      "Dayton",
+      "Oakwood",
+      "Kettering",
+      "Centerville",
+      "Beavercreek",
+      "Xenia",
+      "Bellbrook",
+      "Miamisburg",
+      "Moraine",
+      "Huber Heights",
+      "Fairborn",
+      "Springfield",
+      "Englewood",
+      "Vandalia",
+      "Troy",
+      "Trotwood"
+    ],
+    "phone": "(937) 572-9846",
+    "license_id": "",
+    "blurb": "Locally owned tree company at 3189 Plainfield Rd (BBB lists it in Kettering, OH 45432): tree removal, trimming and pruning, stump grinding, land clearing and clean-up, with free estimates. Its site lists Kettering, Beavercreek, Huber Heights, Fairborn and Springfield in its service area. Ohio does not issue a state tree-service license. Phone matches the company site and its BBB profile. Last verified 10/26/2026. Sources: https://1stchoicerrtreeservice.com/services/ and https://www.bbb.org/us/oh/kettering/profile/tree-service/1st-choice-r-r-tree-service-0322-52716",
+    "tier": "standard",
+    "profile_url": "https://1stchoicerrtreeservice.com/",
+    "services": [
+      "Tree removal",
+      "Tree trimming and pruning",
+      "Stump grinding",
+      "Land clearing",
+      "Clean-up",
+      "Firewood delivery"
+    ],
+    "bbb_url": "https://www.bbb.org/us/oh/kettering/profile/tree-service/1st-choice-r-r-tree-service-0322-52716",
+    "last_verified": "2026-10-26",
+    "field_sources": {
+      "services": "https://1stchoicerrtreeservice.com/services/",
+      "areas_served": "https://1stchoicerrtreeservice.com/services/"
+    }
   }
 ]
