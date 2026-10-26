@@ -1,1 +1,51 @@
-[]
+[
+  {
+    "city_slug": "dayton-oh",
+    "service_slug": "tree-service",
+    "name": "A-Ackerman Tree Service, Inc.",
+    "areas_served": [
+      "Dayton",
+      "Huber Heights",
+      "Vandalia",
+      "Kettering",
+      "Centerville",
+      "Beavercreek"
+    ],
+    "phone": "(937) 277-3965",
+    "license_id": "",
+    "blurb": "North Dayton family-run tree company in business since 1974 (per BBB), doing pruning, removal, land clearing and 24-hour storm and dangerous-tree calls (south-side line 937-433-1819). Its site says it has an ISA Certified Arborist. Ohio does not issue a state tree-service license. Phone matches the company site and its BBB profile. Last verified 10/26/2026. Sources: https://www.aackermantreeservice.com/index.php/contact-us and https://www.bbb.org/us/oh/dayton/profile/tree-service/a-ackerman-tree-service-inc-0322-215",
+    "tier": "standard",
+    "profile_url": "https://aackermantreeservice.com/"
+  },
+  {
+    "city_slug": "dayton-oh",
+    "service_slug": "tree-service",
+    "name": "Aaron's Tree & Landscaping Services, LLC",
+    "areas_served": [
+      "Dayton",
+      "Englewood",
+      "Fairborn",
+      "Centerville",
+      "Beavercreek",
+      "Clayton"
+    ],
+    "phone": "(937) 278-3405",
+    "license_id": "",
+    "blurb": "Dayton tree and landscaping shop at 2910 Needmore Rd, serving the area since 1983 (per company site): tree and shrub trimming and removal, stump work and 24-hour emergency storm service. Its site says a certified arborist is on hand. Ohio does not issue a state tree-service license. Address and phone match the company site and its BBB listing. Last verified 10/26/2026. Sources: https://www.aaronstreeservicellc.com/about-us/ and https://www.bbb.org/us/oh/dayton/category/arborist/accredited",
+    "tier": "standard",
+    "profile_url": "https://www.aaronstreeservicellc.com/"
+  },
+  {
+    "city_slug": "dayton-oh",
+    "service_slug": "tree-service",
+    "name": "Tree Care, Inc.",
+    "areas_served": [
+      "Dayton"
+    ],
+    "phone": "(937) 298-5780",
+    "license_id": "",
+    "blurb": "Dayton tree company at 1000 Pruden Ave, started in 2000 (per BBB), doing pruning, tree and stump removal, Emerald Ash Borer treatment, cabling and bracing for homes, businesses and public properties. Its site says quotes come from ISA-certified arborists. Ohio does not issue a state tree-service license. Address and Dayton phone match the company site and its BBB profile. Last verified 10/26/2026. Sources: https://www.treecareinc.com/get-a-quote/ and https://www.bbb.org/us/oh/dayton/profile/tree-service/tree-care-inc-0322-5001733",
+    "tier": "standard",
+    "profile_url": "https://www.treecareinc.com/"
+  }
+]

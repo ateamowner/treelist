@@ -130,3 +130,50 @@ export function hubBreadcrumbs(city: City) {
 export function servicePageHeadline(city: City, service: Service) {
   return lockedH1(service, city);
 }
+
+/** Homepage only. Directory publisher: no phone, address, reviews, or AggregateRating. */
+export function homeOrganizationSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": organizationId(),
+    name: site.legalName,
+    alternateName: site.name,
+    url: `${siteOrigin()}/`,
+    email: site.email,
+    description: `${site.name} is a tree service directory. It publishes city pages and routes quote requests to listed companies. It is not a tree contractor. Paid placements are labeled.`,
+  };
+}
+
+/** Homepage only. No SearchAction: the site has no site search. */
+export function homeWebsiteSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${siteOrigin()}/#website`,
+    name: site.name,
+    url: `${siteOrigin()}/`,
+    description: site.description,
+    publisher: { "@id": organizationId() },
+  };
+}
+
+/** Homepage only. ItemList of live city tree-service pages (pages, not companies). */
+export function liveCitiesItemListSchema(
+  liveCities: City[],
+  servicePathFor: (city: City) => string
+) {
+  if (!liveCities.length) return null;
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: `${site.name} live cities`,
+    numberOfItems: liveCities.length,
+    itemListElement: liveCities.map((city, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: `Tree service in ${city.name}, ${city.stateAbbr}`,
+      url: `${siteOrigin()}${servicePathFor(city)}`,
+    })),
+  };
+}

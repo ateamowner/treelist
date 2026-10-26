@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { JsonLd } from "@/components/json-ld";
 import { QuoteFormLoader } from "@/components/quote-form-loader";
 import {
   cities,
@@ -9,6 +10,12 @@ import {
   services,
   site,
 } from "@/config/site";
+import { getAllListings } from "@/lib/listings";
+import {
+  homeOrganizationSchema,
+  homeWebsiteSchema,
+  liveCitiesItemListSchema,
+} from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: `${site.name} — tree service directory`,
@@ -23,9 +30,22 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   const live = cities.filter((city) => liveCitySlugs.includes(city.slug));
+  const listings = getAllListings();
+  const listedCompanies = new Set(listings.map((listing) => listing.name)).size;
+  const citiesWithListings = new Set(listings.map((listing) => listing.city_slug)).size;
+  const citiesItemList = liveCitiesItemListSchema(live, (city) =>
+    servicePath(city, "tree-service")
+  );
 
   return (
     <div className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6">
+      <JsonLd
+        data={[
+          homeOrganizationSchema(),
+          homeWebsiteSchema(),
+          ...(citiesItemList ? [citiesItemList] : []),
+        ]}
+      />
       <section className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_22rem]">
         <div>
           <p className="text-sm font-medium text-primary">{site.tagline}</p>
@@ -53,6 +73,12 @@ export default function HomePage() {
 
       <section id="cities" className="mt-14">
         <h2 className="font-heading text-2xl font-semibold">Live cities</h2>
+        <p className="mt-2 text-base font-medium">
+          {`${live.length} live cities`}
+          {listedCompanies > 0
+            ? ` · ${listedCompanies} verified ${listedCompanies === 1 ? "company" : "companies"} listed in ${citiesWithListings} ${citiesWithListings === 1 ? "city" : "cities"} so far`
+            : null}
+        </p>
         <p className="mt-2 max-w-2xl text-base text-muted-foreground">
           Live markets first. Nearby-city pages exist so internal links do not
           404.
