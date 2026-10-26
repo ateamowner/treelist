@@ -32,3 +32,9 @@ export function getListings(citySlug: string, serviceSlug: string): Listing[] {
     )
     .sort((a, b) => TIER_ORDER[a.tier] - TIER_ORDER[b.tier]);
 }
+
+/** Every valid listing row across all cities and services (for homepage counts). */
+export function getAllListings(): Listing[] {
+  const rows = Array.isArray(listingsData) ? listingsData : [];
+  return rows.filter(isListing);
+}
