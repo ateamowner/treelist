@@ -10,7 +10,7 @@ import {
   services,
   site,
 } from "@/config/site";
-import { getAllListings } from "@/lib/listings";
+import { getAllListings, isServicePageIndexable } from "@/lib/listings";
 import {
   homeOrganizationSchema,
   homeWebsiteSchema,
@@ -33,7 +33,9 @@ export default function HomePage() {
   const listings = getAllListings();
   const listedCompanies = new Set(listings.map((listing) => listing.name)).size;
   const citiesWithListings = new Set(listings.map((listing) => listing.city_slug)).size;
-  const citiesItemList = liveCitiesItemListSchema(live, (city) =>
+  const citiesItemList = liveCitiesItemListSchema(
+    live.filter((city) => isServicePageIndexable(city, "tree-service")),
+    (city) =>
     servicePath(city, "tree-service")
   );
 
