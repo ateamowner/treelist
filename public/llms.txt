@@ -1,0 +1,34 @@
+# TreeList
+
+> TreeList (treelist.ai) is a directory of tree service companies, organized by city and service. It is not a contractor and does not send a crew of its own. Homeowners can send a free quote request from any city page, and TreeList routes it to a local company that serves their ZIP code. Paid placements are labeled "Featured" or "Exclusive" on the page. TreeList does not publish star ratings, invented company names or city-specific prices.
+
+## Live cities
+- [Dayton, OH](https://treelist.ai/dayton-oh/)
+- [Pittsburgh, PA](https://treelist.ai/pittsburgh-pa/)
+- [Milwaukee, WI](https://treelist.ai/milwaukee-wi/)
+- [Oklahoma City, OK](https://treelist.ai/oklahoma-city-ok/)
+- [Omaha, NE](https://treelist.ai/omaha-ne/)
+- [Columbia, SC](https://treelist.ai/columbia-sc/)
+- [Des Moines, IA](https://treelist.ai/des-moines-ia/)
+- [Winston-Salem, NC](https://treelist.ai/winston-salem-nc/)
+- [Wichita, KS](https://treelist.ai/wichita-ks/)
+- [Syracuse, NY](https://treelist.ai/syracuse-ny/)
+
+## Services (each live city has a page per service)
+- Tree service: assessment, pruning, removal and cleanup, e.g. [Dayton](https://treelist.ai/dayton-oh/tree-service/)
+- Tree removal: taking a tree down, rigging, haul-off and cleanup, e.g. [Dayton](https://treelist.ai/dayton-oh/tree-removal/)
+- Stump grinding: grinding a stump below grade, e.g. [Dayton](https://treelist.ai/dayton-oh/stump-grinding/)
+- Tree trimming: pruning for clearance, shape, storm readiness or deadwood, e.g. [Dayton](https://treelist.ai/dayton-oh/tree-trimming/)
+- Emergency tree service: storm damage or a tree on a structure or road, e.g. [Dayton](https://treelist.ai/dayton-oh/emergency-tree-service/)
+
+## How it works
+- A quote request collects name, phone, email, ZIP, service type and timing, and is routed to a company that covers that ZIP.
+- Standard listings are free. Featured and Exclusive spots are paid placements and are labeled as such on the page.
+- Cost guidance is a published national range (Angi 2026: tree removal typically $200 to $2,000+, about $750 on average), not a city survey.
+
+## For tree service companies
+- [List your company](https://treelist.ai/for-pros/)
+
+## Contact
+- hello@treelist.ai
+- [Privacy](https://treelist.ai/privacy/)
