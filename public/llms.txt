@@ -1,6 +1,6 @@
 # TreeList
 
-> TreeList (treelist.ai) is a directory of tree service companies, organized by city and service. It is not a tree service company: it does not employ crews, own equipment or do tree work. Homeowners can send a free quote request from any city page, and TreeList routes it to a local company that serves their ZIP code. Paid placements are labeled "Featured" or "Exclusive" on the page. TreeList does not publish star ratings, invented company names or city-specific prices.
+> TreeList (treelist.ai) is a directory of tree service companies, organized by city and service. It is not a contractor and does not send a crew of its own. Homeowners can send a free quote request from any city page, and TreeList routes it to a local company that serves their ZIP code. Paid placements are labeled "Featured" or "Exclusive" on the page. TreeList does not publish star ratings, invented company names or city-specific prices.
 
 ## Live cities
 - [Dayton, OH](https://treelist.ai/dayton-oh/)
