@@ -51,7 +51,7 @@ export function RelatedServiceLinks({
   return (
     <section className="mt-10">
       <h2 className="font-heading text-xl font-semibold">
-        Related services in {city.name}
+        {`Related services in ${city.name}`}
       </h2>
       <ul className="mt-3 grid gap-2 sm:grid-cols-2">
         {related.map((service) => (
