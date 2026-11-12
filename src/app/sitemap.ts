@@ -12,7 +12,7 @@ function loc(path: string): string {
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticRoutes = ["/", "/privacy/", "/for-pros/"].map((path) => ({
+  const staticRoutes = ["/", "/privacy/", "/for-pros/", "/how-we-list/"].map((path) => ({
     url: loc(path),
     lastModified: new Date(),
     changeFrequency: "weekly" as const,

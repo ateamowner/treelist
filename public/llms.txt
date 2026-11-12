@@ -22,6 +22,7 @@
 - Emergency tree service: storm damage or a tree on a structure or road, e.g. [Dayton](https://treelist.ai/dayton-oh/emergency-tree-service/)
 
 ## How it works
+- Full method: https://treelist.ai/how-we-list/
 - A quote request collects name, phone, email, ZIP, service type and timing, and is routed to a company that covers that ZIP.
 - Standard listings are free. Featured and Exclusive spots are paid placements and are labeled as such on the page.
 - Cost guidance is a published national range (Angi 2026: tree removal typically $200 to $2,000+, about $750 on average), not a city survey.
