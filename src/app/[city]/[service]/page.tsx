@@ -32,6 +32,11 @@ import {
   publisherLocalBusiness,
   servicePageBreadcrumbs,
 } from "@/lib/schema";
+import {
+  SeasonalCostLines,
+  SeasonalSection,
+  seasonalFaqs,
+} from "@/seasonal";
 
 export const dynamicParams = false;
 
@@ -84,7 +89,7 @@ export default async function ServicePage({
   const intro = introParagraphs(city, service);
   const choose = howToChoose(city, service);
   const cost = costGuideCopy(city);
-  const questions = faqs(city, service);
+  const questions = seasonalFaqs(city, service, faqs(city, service));
   const listings = getListings(city.slug, service.slug);
   const isStub = city.status === "coming_soon" || service.slug !== "tree-service";
 
@@ -135,7 +140,10 @@ export default async function ServicePage({
 
         <div className="lg:col-start-1">
           <HowToChoose content={choose} />
-          <CostGuide content={cost} />
+          <CostGuide content={cost}>
+            <SeasonalCostLines city={city} service={service} />
+          </CostGuide>
+          <SeasonalSection city={city} service={service} />
           <FaqList faqs={questions} />
           <ListingsBlock listings={listings} />
           <RelatedServiceLinks city={city} current={service} />
