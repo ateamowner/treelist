@@ -300,7 +300,7 @@ export function metaDescription(city: City, service: Service): string {
   if (city.status === "coming_soon") {
     return `${lockedH1(service, city)}. ${site.name} directory page (coming soon). Request a quote and we route it. Not a contractor.`;
   }
-  return `${lockedH1(service, city)}. Compare listed companies, read a national cost range, and request a callback. ${site.name} is a directory, not a tree shop.`;
+  return `${lockedH1(service, city)}. Compare listed companies and request a callback. ${site.name} is a directory, not a tree shop.`;
 }
 
 function joinAnd(names: string[]): string {

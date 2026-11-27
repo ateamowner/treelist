@@ -62,8 +62,8 @@ export default function PrivacyPage() {
         Questions:{" "}
         <a href={`mailto:${site.email}`} className="underline">
           {site.email}
-        </a>{" "}
-        or {site.phone}.
+        </a>
+        .
       </p>
     </article>
   );

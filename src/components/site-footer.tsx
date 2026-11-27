@@ -42,11 +42,6 @@ export function SiteFooter() {
                 Privacy
               </Link>
             </li>
-            <li>
-              <a href={`tel:${site.phone.replace(/\D/g, "")}`} className="hover:underline">
-                {site.phone}
-              </a>
-            </li>
           </ul>
         </div>
       </div>
