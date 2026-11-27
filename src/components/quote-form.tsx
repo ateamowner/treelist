@@ -183,7 +183,7 @@ export function QuoteForm({ city, service, listingId, compact }: QuoteFormProps)
             required
             autoComplete="tel"
             inputMode="tel"
-            placeholder={site.phone}
+            placeholder="Your phone number"
             className={fieldClassName}
             value={draft.phone}
             onChange={(event) => onTextChange("phone", event.target.value)}

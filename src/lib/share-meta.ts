@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { site } from "@/config/site";
 
-/** Default 1200x630 share card in /public. */
+/** Default 1200x630 share card in /public. Site name only. */
 export const shareImage = {
   url: "/og.png",
   width: 1200,
   height: 630,
-  alt: "TreeList tree service directory",
+  alt: "TreeList",
 };
 
 /**

@@ -3,8 +3,8 @@ import { Source_Sans_3, Source_Serif_4 } from "next/font/google";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { site } from "@/config/site";
-import "./globals.css";
 import { shareImage } from "@/lib/share-meta";
+import "./globals.css";
 
 const sans = Source_Sans_3({
   subsets: ["latin"],
@@ -27,6 +27,9 @@ export const metadata: Metadata = {
   },
   description: site.description,
   applicationName: site.name,
+  icons: {
+    icon: [{ url: "/favicon.ico", type: "image/x-icon" }],
+  },
   openGraph: {
     siteName: site.name,
     type: "website",

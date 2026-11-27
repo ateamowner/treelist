@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: "/" },
+  ...shareMeta(title, description, "/"),
   // Bing msvalidate.01: leave unset until Anthony pastes the real Bing
   // Webmaster Tools code for treelist.ai. Do not invent a token.
   verification: {

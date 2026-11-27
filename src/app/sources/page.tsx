@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { site } from "@/config/site";
+import { shareMeta } from "@/lib/share-meta";
 
 const PATH = "/sources/";
 const title = `Sources, ${site.name}`;
@@ -11,13 +12,7 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: PATH },
-  openGraph: {
-    title,
-    description,
-    url: PATH,
-    siteName: site.name,
-    type: "website",
-  },
+  ...shareMeta(title, description, PATH),
 };
 
 const sources = [

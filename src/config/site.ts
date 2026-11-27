@@ -1,5 +1,5 @@
 /**
- * TreeList site config — rename the brand, domain, phone, cities, and
+ * TreeList site config — rename the brand, domain, cities, and
  * services here. Theme tokens live alongside so a rebrand is one file.
  */
 
@@ -8,7 +8,6 @@ export const site = {
   legalName: "TreeList",
   domain: "treelist.ai",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://treelist.ai",
-  phone: "(555) 014-8733",
   email: "hello@treelist.ai",
   leadsEmail: "treelist@agentmail.to",
   /** Native HTML POST to Web3Forms (notifies LEADS_EMAIL). No fetch/XHR. */
